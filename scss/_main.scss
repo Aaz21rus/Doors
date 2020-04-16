@@ -1,3 +1,23 @@
 .page-main {
-    
+  max-width: 1920px;
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 19px 0 15px 0;
+      .logo {
+        display: block;
+        height: 89px;
+      }
+      .tel {
+        padding-left: 29px;
+        background-image: url("../Picture/iconcolor/телефон.jpg");
+        background-repeat: no-repeat;
+        background-position: left center;
+      }
+    }
+  }
 }

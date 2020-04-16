@@ -7,29 +7,31 @@ html(lang="ru")
     link(rel="stylesheet", href="css/style.css")
   body.page-main
     .container
-      header
-        img(src="../Picture/logo/doorlogo.png", alt="logo").logo
+      header.header
+        a(href="http://", target="_blank", rel="noopener noreferrer")
+          img(src="../Picture/logo/doorlogo.png", alt="logo").logo
         P.contact
-          a(href="tel:+79089205353").tel +7 (908) 920-53-53) 
+          a(href="tel:+79089205353").tel +7 (908) 920-53-53)
           button.btn Заказать звонок
         button.basket 2 товара на сумму 1 050 руб.
     .fullcantainer
-      nav.menu
-        button.catalog Каталог
-        input(type="search", name="search", placeholder="Поиск по каталогу")
-        ul.menulist
-          li.item
-            button.itembtn Установка
-          li.item
-            button.itembtn Контакты
-          li.item
-            button.itembtn О компании
-          li.item
-            button.itembtn Оптовикам
-          li.item
-            button.itembtn Гарантия
-          li.item
-            button.itembtn Доставка и оплата
+      .container
+        nav.menu
+          button.catalog Каталог
+          input(type="search", name="search", placeholder="Поиск по каталогу")
+          ul.menulist
+            li.item
+              button.itembtn Установка
+            li.item
+              button.itembtn Контакты
+            li.item
+              button.itembtn О компании
+            li.item
+              button.itembtn Оптовикам
+            li.item
+              button.itembtn Гарантия
+            li.item
+              button.itembtn Доставка и оплата
 
 
 
