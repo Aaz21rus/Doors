@@ -46,18 +46,75 @@ a {
 
 button {
   cursor: pointer;
-  outline: 0; }
+  outline: 0;
+  border: none;
+  background: none; }
 
 ul {
   list-style: none; }
+
+.btn {
+  width: 189px;
+  height: 44px;
+  background-color: #ec7919;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff; }
+
+.basket {
+  width: 157px;
+  padding-left: 50px;
+  background-image: url("../Picture/iconcolor/корзина.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: left; }
+
+.menu {
+  display: flex;
+  padding: 11px 0; }
+
+.catalog {
+  width: 274px;
+  background-color: #38393e;
+  display: flex;
+  justify-content: center;
+  margin-right: 44px; }
+  .catalog .burger {
+    display: flex;
+    flex-direction: column;
+    margin-right: 19px; }
+    .catalog .burger .line {
+      width: 27px;
+      height: 2px;
+      background-color: #ffffff;
+      margin-bottom: 5px; }
+    .catalog .burger .line:last-child {
+      margin-bottom: 0; }
+  .catalog .catlogtext {
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #ffffff; }
+
+.itembtn {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff; }
 
 .page-main {
   max-width: 1920px; }
   .page-main .container {
     max-width: 1600px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex; }
     .page-main .container .header {
       display: flex;
+      width: 100%;
       justify-content: space-between;
       align-items: center;
       padding: 19px 0 15px 0; }
@@ -68,4 +125,28 @@ ul {
         padding-left: 29px;
         background-image: url("../Picture/iconcolor/телефон.jpg");
         background-repeat: no-repeat;
-        background-position: left center; }
+        background-position: left center;
+        margin-right: 16px;
+        font-size: 26px;
+        line-height: 24px;
+        font-weight: 500; }
+  .page-main .fullcantainer {
+    background-color: #525358; }
+  .page-main .search {
+    margin: 11px 36px 11px 0;
+    padding: 12px 33px 10px 18px;
+    width: 273px;
+    background-image: url("../Picture/iconcolor/поиск.jpg");
+    background-repeat: no-repeat;
+    background-position: right center; }
+  .page-main ::placeholder {
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #b3b0b0; }
+  .page-main .menulist {
+    display: flex;
+    width: 973px;
+    justify-content: space-between;
+    align-items: center; }
