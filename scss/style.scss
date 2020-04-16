@@ -1,4 +1,10 @@
-body {
-  background-color: gray;
-  color: #ffffff;
-}
+@import 'fonts';
+
+@import 'global';
+
+//components
+@import 'headings';
+
+//pages
+@import 'main';
+

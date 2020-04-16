@@ -2,12 +2,15 @@ const { src, dest, parallel, watch, task, series } = require('gulp')
 const pug = require('gulp-pug')
 const scss = require('gulp-sass')
 const bs = require('browser-sync')
+const autoprefixer = require('gulp-autoprefixer')
 // const minifyCSS = require('gulp-csso')
 // const concat = require('gulp-concat')
 
 function html() {
   return src('pug/*.pug')
-    .pipe(pug())
+    .pipe(pug({
+      pretty: true
+    }))
     .pipe(dest('build'))
 }
 
@@ -16,6 +19,9 @@ function css() {
     .pipe(scss())
     // .pipe(minifyCSS())
     .pipe(dest('build/css'))
+    .pipe(autoprefixer({
+      cascade: false
+    }))
 }
 
 // function js() {
