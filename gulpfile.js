@@ -7,7 +7,7 @@ const autoprefixer = require('gulp-autoprefixer')
 // const concat = require('gulp-concat')
 
 function html() {
-  return src('pug/*.pug')
+  return src('pug/pages/*.pug')
     .pipe(pug({
       pretty: true
     }))
