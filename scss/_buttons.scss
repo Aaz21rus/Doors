@@ -59,3 +59,26 @@
     font-weight: 300;
     color: #ffffff;
 }
+
+.doors-name {
+  width: 271px;
+  height: 43px;
+  border: 1.0px solid #d0d0d0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  padding-right: 29px;
+  background-image: url(../Picture/iconcolor/v-open.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.door-material {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 23px;
+}

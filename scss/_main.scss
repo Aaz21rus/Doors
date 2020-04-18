@@ -29,6 +29,7 @@
 
   .fullcantainer {
     background-color: #525358;
+    margin-bottom: 20px;
   }
 
   .search {
@@ -53,5 +54,37 @@
     width: 973px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .doors {
+    margin-bottom: 48px;
+  }
+
+  .door-mat-list {
+    padding: 23px 18px 3px 30px;
+    display: none;
+  }
+
+  .veneer {
+    margin-bottom: 27px;
+    padding-left: 55px;
+    .veneer-item:not(:last-child) {
+      margin-bottom: 23px;
+    }
+    .veneer-name {
+      font-size: 16px;
+      color: #d96e14;
+    }
+  }
+
+  .sort-color {
+    padding: 23px 0 28px 20px;
+    display: none;
+    .color:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .color-name {
+      padding-left: 22px;
+    }
   }
 }

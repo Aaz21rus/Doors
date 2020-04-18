@@ -53,6 +53,13 @@ button {
 ul {
   list-style: none; }
 
+.headling3 {
+  font-size: 24px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px; }
+
 .btn {
   width: 189px;
   height: 44px;
@@ -106,6 +113,27 @@ ul {
   font-weight: 300;
   color: #ffffff; }
 
+.doors-name {
+  width: 271px;
+  height: 43px;
+  border: 1.0px solid #d0d0d0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  padding-right: 29px;
+  background-image: url(../Picture/iconcolor/v-open.png);
+  background-repeat: no-repeat;
+  background-position: left center; }
+
+.door-material {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 23px; }
+
 .page-main {
   max-width: 1920px; }
   .page-main .container {
@@ -131,7 +159,8 @@ ul {
         line-height: 24px;
         font-weight: 500; }
   .page-main .fullcantainer {
-    background-color: #525358; }
+    background-color: #525358;
+    margin-bottom: 20px; }
   .page-main .search {
     margin: 11px 36px 11px 0;
     padding: 12px 33px 10px 18px;
@@ -150,3 +179,23 @@ ul {
     width: 973px;
     justify-content: space-between;
     align-items: center; }
+  .page-main .doors {
+    margin-bottom: 48px; }
+  .page-main .door-mat-list {
+    padding: 23px 18px 3px 30px;
+    display: none; }
+  .page-main .veneer {
+    margin-bottom: 27px;
+    padding-left: 55px; }
+    .page-main .veneer .veneer-item:not(:last-child) {
+      margin-bottom: 23px; }
+    .page-main .veneer .veneer-name {
+      font-size: 16px;
+      color: #d96e14; }
+  .page-main .sort-color {
+    padding: 23px 0 28px 20px;
+    display: none; }
+    .page-main .sort-color .color:not(:last-child) {
+      margin-bottom: 20px; }
+    .page-main .sort-color .color-name {
+      padding-left: 22px; }
