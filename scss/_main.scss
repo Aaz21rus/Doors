@@ -1,90 +1,190 @@
 .page-main {
   max-width: 1920px;
+  .header {
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      .head {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px 0 15px 0;
+        .logo {
+          display: block;
+          height: 89px;
+        }
+        .tel {
+          padding-left: 29px;
+          background-image: url("../Picture/iconcolor/телефон.jpg");
+          background-repeat: no-repeat;
+          background-position: left center;
+          margin-right: 16px;
+          font-size: 26px;
+          line-height: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+    .fullcantainer {
+      background-color: #525358;
+      margin-bottom: 20px;
+      .search {
+        margin: 11px 36px 11px 0;
+        padding: 12px 33px 10px 18px;
+        width: 273px;
+        background-image: url("../Picture/iconcolor/поиск.jpg");
+        background-repeat: no-repeat;
+        background-position: right center;
+      }
+      ::placeholder {
+        opacity: 0.8;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #b3b0b0;
+      }
+      .menulist {
+        display: flex;
+        width: 973px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
   .container {
     max-width: 1600px;
     margin: 0 auto;
     display: flex;
-    .header {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      align-items: center;
-      padding: 19px 0 15px 0;
-      .logo {
-        display: block;
-        height: 89px;
+    .filter {
+      margin-right: 47px;
+      .doors {
+        margin-bottom: 48px;
       }
-      .tel {
-        padding-left: 29px;
-        background-image: url("../Picture/iconcolor/телефон.jpg");
-        background-repeat: no-repeat;
-        background-position: left center;
-        margin-right: 16px;
-        font-size: 26px;
-        line-height: 24px;
-        font-weight: 500;
+      .door-mat-list {
+        padding: 23px 18px 3px 30px;
+        display: none;
+      }
+      .veneer {
+        margin-bottom: 27px;
+        padding-left: 55px;
+        .veneer-item:not(:last-child) {
+          margin-bottom: 23px;
+        }
+        .veneer-name {
+          font-size: 16px;
+          color: #d96e14;
+        }
+      }
+      .sort-color {
+        padding: 23px 0 28px 20px;
+        display: none;
+        .color:not(:last-child) {
+          margin-bottom: 20px;
+        }
+        .color-name {
+          padding-left: 22px;
+        }
       }
     }
-  }
-
-  .fullcantainer {
-    background-color: #525358;
-    margin-bottom: 20px;
-  }
-
-  .search {
-    margin: 11px 36px 11px 0;
-    padding: 12px 33px 10px 18px;
-    width: 273px;
-    background-image: url("../Picture/iconcolor/поиск.jpg");
-    background-repeat: no-repeat;
-    background-position: right center;
-  }
-
-  ::placeholder {
-    opacity: 0.8;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #b3b0b0;
-  }
-
-  .menulist {
-    display: flex;
-    width: 973px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .doors {
-    margin-bottom: 48px;
-  }
-
-  .door-mat-list {
-    padding: 23px 18px 3px 30px;
-    display: none;
-  }
-
-  .veneer {
-    margin-bottom: 27px;
-    padding-left: 55px;
-    .veneer-item:not(:last-child) {
-      margin-bottom: 23px;
-    }
-    .veneer-name {
-      font-size: 16px;
-      color: #d96e14;
+    .main-section {
+      width: 1283px;
     }
   }
 
-  .sort-color {
-    padding: 23px 0 28px 20px;
-    display: none;
-    .color:not(:last-child) {
-      margin-bottom: 20px;
-    }
-    .color-name {
-      padding-left: 22px;
+  .footer {
+    .fullcontainer {
+      background-color: #525358;
+      .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        display: flex;
+        padding: 82px 0;
+        justify-content: space-between;
+        align-items: center;
+        .logo-footer {
+          width: 298px;
+          height: 89px;
+        }
+        .discount {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: 400;
+          color: #989696;
+          margin-bottom: 13px;
+        }
+        .footersearch {
+          padding: 12px 33px 10px 18px;
+          width: 319px;
+          background-image: url("../Picture/iconcolor/поиск.jpg");
+          background-repeat: no-repeat;
+          background-position: right center;
+        }
+        ::placeholder {
+          opacity: 0.8;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 400;
+          color: #b3b0b0;
+        }
+        .nav-menu {
+          columns: 2;
+          column-gap: 105px;
+          .item-list {
+            width: 100%;
+          }
+          .item-list:not(:last-child) {
+            margin-bottom: 22px;
+          }
+          .item-list a {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #ffffff;
+          }
+        }
+        .contact {
+          width: 291px;
+          text-align: right;
+          .footer-phone {
+            margin-bottom: 26px;
+            .foter-tel {
+              font-size: 26px;
+              line-height: 24px;
+              font-weight: 500;
+              color: #ffffff;
+            }
+            .schedule {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 500;
+              color: #9c9a9a;
+              .day  {
+                font-weight: 400;
+                color: #ffffff;
+              }
+            }
+          }
+          .mail-link {
+            display: block;
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #ffffff;
+            margin-bottom: 28px;
+          }
+          .footer-address {
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #a19f9f;
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,30 @@
+footer.footer
+  .fullcontainer
+    .container
+      img(src="Picture/logo/doorlogo.png", alt="logo").logo-footer
+      .footer-search
+        .discount
+          a(href="#").offer Скидки %
+          a(href="#").offer Распродажа
+          a(href="#").offer Новинки
+        input(type="search", name="footer-search", placeholder="Поиск по каталогу").footersearch
+      nav.footer-nav
+        ul.nav-menu
+          for i in [{link:'#', name:'Катплог'}, {link:'#', name:'Установка'}, {link:'#', name:'Контакты'}, {link:'#', name:'О компании'}, {link:'#', name:'Оптовикам'}, {link:'#', name:'Гарантичя'}, {link:'#', name:'Доставка'}, {link:'#', name:'Оплата'}]
+            li.item-list
+              a(href=i.link)=i.name
+      .contact
+        .footer-phone
+          a(href="tel:+79089205353").foter-tel +7 (908) 920-53-53
+          p.schedule
+            |
+            span.day Пд-Пц
+            | с 09.00 до 19.00
+            span.day Вых
+            | до 18.00
+        a(href="mailto:dveri@tuk-tuk.in").mail-link dveri@tuk-tuk.in
+        p.footer-address Склад: г. Екатеринбург ул. Шефская 1 (пункт самовывова) г. Нижний
+          br
+          | Тагил ул. Индустриальная 21
+
+

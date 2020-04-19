@@ -136,20 +136,20 @@ ul {
 
 .page-main {
   max-width: 1920px; }
-  .page-main .container {
+  .page-main .header .container {
     max-width: 1600px;
     margin: 0 auto;
     display: flex; }
-    .page-main .container .header {
+    .page-main .header .container .head {
       display: flex;
       width: 100%;
       justify-content: space-between;
       align-items: center;
       padding: 19px 0 15px 0; }
-      .page-main .container .header .logo {
+      .page-main .header .container .head .logo {
         display: block;
         height: 89px; }
-      .page-main .container .header .tel {
+      .page-main .header .container .head .tel {
         padding-left: 29px;
         background-image: url("../Picture/iconcolor/телефон.jpg");
         background-repeat: no-repeat;
@@ -158,44 +158,126 @@ ul {
         font-size: 26px;
         line-height: 24px;
         font-weight: 500; }
-  .page-main .fullcantainer {
+  .page-main .header .fullcantainer {
     background-color: #525358;
     margin-bottom: 20px; }
-  .page-main .search {
-    margin: 11px 36px 11px 0;
-    padding: 12px 33px 10px 18px;
-    width: 273px;
-    background-image: url("../Picture/iconcolor/поиск.jpg");
-    background-repeat: no-repeat;
-    background-position: right center; }
-  .page-main ::placeholder {
-    opacity: 0.8;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #b3b0b0; }
-  .page-main .menulist {
-    display: flex;
-    width: 973px;
-    justify-content: space-between;
-    align-items: center; }
-  .page-main .doors {
-    margin-bottom: 48px; }
-  .page-main .door-mat-list {
-    padding: 23px 18px 3px 30px;
-    display: none; }
-  .page-main .veneer {
-    margin-bottom: 27px;
-    padding-left: 55px; }
-    .page-main .veneer .veneer-item:not(:last-child) {
-      margin-bottom: 23px; }
-    .page-main .veneer .veneer-name {
-      font-size: 16px;
-      color: #d96e14; }
-  .page-main .sort-color {
-    padding: 23px 0 28px 20px;
-    display: none; }
-    .page-main .sort-color .color:not(:last-child) {
-      margin-bottom: 20px; }
-    .page-main .sort-color .color-name {
-      padding-left: 22px; }
+    .page-main .header .fullcantainer .search {
+      margin: 11px 36px 11px 0;
+      padding: 12px 33px 10px 18px;
+      width: 273px;
+      background-image: url("../Picture/iconcolor/поиск.jpg");
+      background-repeat: no-repeat;
+      background-position: right center; }
+    .page-main .header .fullcantainer ::placeholder {
+      opacity: 0.8;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #b3b0b0; }
+    .page-main .header .fullcantainer .menulist {
+      display: flex;
+      width: 973px;
+      justify-content: space-between;
+      align-items: center; }
+  .page-main .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex; }
+    .page-main .container .filter {
+      margin-right: 47px; }
+      .page-main .container .filter .doors {
+        margin-bottom: 48px; }
+      .page-main .container .filter .door-mat-list {
+        padding: 23px 18px 3px 30px;
+        display: none; }
+      .page-main .container .filter .veneer {
+        margin-bottom: 27px;
+        padding-left: 55px; }
+        .page-main .container .filter .veneer .veneer-item:not(:last-child) {
+          margin-bottom: 23px; }
+        .page-main .container .filter .veneer .veneer-name {
+          font-size: 16px;
+          color: #d96e14; }
+      .page-main .container .filter .sort-color {
+        padding: 23px 0 28px 20px;
+        display: none; }
+        .page-main .container .filter .sort-color .color:not(:last-child) {
+          margin-bottom: 20px; }
+        .page-main .container .filter .sort-color .color-name {
+          padding-left: 22px; }
+    .page-main .container .main-section {
+      width: 1283px; }
+  .page-main .footer .fullcontainer {
+    background-color: #525358; }
+    .page-main .footer .fullcontainer .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      padding: 82px 0;
+      justify-content: space-between;
+      align-items: center; }
+      .page-main .footer .fullcontainer .container .logo-footer {
+        width: 298px;
+        height: 89px; }
+      .page-main .footer .fullcontainer .container .discount {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #989696;
+        margin-bottom: 13px; }
+      .page-main .footer .fullcontainer .container .footersearch {
+        padding: 12px 33px 10px 18px;
+        width: 319px;
+        background-image: url("../Picture/iconcolor/поиск.jpg");
+        background-repeat: no-repeat;
+        background-position: right center; }
+      .page-main .footer .fullcontainer .container ::placeholder {
+        opacity: 0.8;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #b3b0b0; }
+      .page-main .footer .fullcontainer .container .nav-menu {
+        columns: 2;
+        column-gap: 105px; }
+        .page-main .footer .fullcontainer .container .nav-menu .item-list {
+          width: 100%; }
+        .page-main .footer .fullcontainer .container .nav-menu .item-list:not(:last-child) {
+          margin-bottom: 22px; }
+        .page-main .footer .fullcontainer .container .nav-menu .item-list a {
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 300;
+          color: #ffffff; }
+      .page-main .footer .fullcontainer .container .contact {
+        width: 291px;
+        text-align: right; }
+        .page-main .footer .fullcontainer .container .contact .footer-phone {
+          margin-bottom: 26px; }
+          .page-main .footer .fullcontainer .container .contact .footer-phone .foter-tel {
+            font-size: 26px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #ffffff; }
+          .page-main .footer .fullcontainer .container .contact .footer-phone .schedule {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #9c9a9a; }
+            .page-main .footer .fullcontainer .container .contact .footer-phone .schedule .day {
+              font-weight: 400;
+              color: #ffffff; }
+        .page-main .footer .fullcontainer .container .contact .mail-link {
+          display: block;
+          font-size: 20px;
+          line-height: 1.2;
+          font-weight: 300;
+          color: #ffffff;
+          margin-bottom: 28px; }
+        .page-main .footer .fullcontainer .container .contact .footer-address {
+          font-size: 16px;
+          line-height: 1.2;
+          font-weight: 300;
+          color: #a19f9f; }
