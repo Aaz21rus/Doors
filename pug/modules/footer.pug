@@ -12,7 +12,7 @@ footer.footer
         ul.nav-menu
           for i in [{link:'#', name:'Катплог'}, {link:'#', name:'Установка'}, {link:'#', name:'Контакты'}, {link:'#', name:'О компании'}, {link:'#', name:'Оптовикам'}, {link:'#', name:'Гарантичя'}, {link:'#', name:'Доставка'}, {link:'#', name:'Оплата'}]
             li.item-list
-              a(href=i.link)=i.name
+              a(href=i.link).item-nav=i.name
       .contact
         .footer-phone
           a(href="tel:+79089205353").foter-tel +7 (908) 920-53-53

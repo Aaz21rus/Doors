@@ -1,34 +1,34 @@
 @charset "UTF-8";
-/* roboto-300 - latin */
+/* roboto-300 - cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v20-latin-300.woff2") format("woff2"), url("../fonts/roboto-v20-latin-300.woff") format("woff");
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v20-cyrillic-300.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-300.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
-/* roboto-regular - latin */
+/* roboto-regular - cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
-/* roboto-500 - latin */
+/* roboto-500 - cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v20-latin-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin-500.woff") format("woff");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v20-cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
-/* roboto-700 - latin */
+/* roboto-700 - cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin-700.woff") format("woff");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-cyrillic-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 * {
@@ -69,23 +69,9 @@ ul {
   font-weight: 500;
   color: #ffffff; }
 
-.basket {
-  width: 182px;
-  padding-left: 50px;
-  background-image: url("../img/iconcolor/корзина.jpg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 300;
-  text-align: left; }
-
-.menu {
-  display: flex;
-  padding: 11px 0; }
-
 .catalog {
   width: 274px;
+  height: 58px;
   background-color: #38393e;
   display: flex;
   justify-content: center;
@@ -114,6 +100,9 @@ ul {
   color: #ffffff; }
 
 .doors-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 271px;
   height: 43px;
   border: 1.0px solid #d0d0d0;
@@ -121,18 +110,37 @@ ul {
   line-height: 16px;
   font-weight: 500;
   margin-bottom: 2px;
-  padding-right: 29px;
-  background-image: url(../img/iconcolor/v-open.png);
-  background-repeat: no-repeat;
-  background-position: left center; }
+  padding: 0 17px 0 29px; }
+
+.point {
+  width: 8px;
+  height: 8px;
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+  -webkit-transform: rotate(45deg) translateX(-25%);
+  transform: rotate(45deg) translateX(-25%); }
 
 .door-material {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: left;
   font-size: 18px;
   line-height: 16px;
   font-weight: 400;
   margin-bottom: 23px; }
+
+.point-in {
+  width: 8px;
+  height: 8px;
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+  -webkit-transform: rotate(-45deg) translateX(-25%);
+  transform: rotate(-45deg) translateX(-25%); }
+
+.door-material:hover .point-in {
+  border-color: #ec7919; }
 
 .page-main .header .container {
   max-width: 1600px;
@@ -156,17 +164,34 @@ ul {
       font-size: 26px;
       line-height: 24px;
       font-weight: 500; }
+    .page-main .header .container .head .basket {
+      width: 182px;
+      padding-left: 50px;
+      background-image: url("../img/iconcolor/корзина.jpg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 300;
+      text-align: left; }
+      .page-main .header .container .head .basket .good-num {
+        font-weight: 500;
+        margin-right: 5px; }
+      .page-main .header .container .head .basket .good-price {
+        font-weight: 500;
+        margin-left: 5px; }
 
 .page-main .header .menu-bar {
   background-color: #525358;
   margin-bottom: 20px; }
   .page-main .header .menu-bar .search {
-    margin: 11px 36px 11px 0;
-    padding: 12px 33px 10px 18px;
+    padding: 0 17px 0px 18px;
     width: 273px;
+    height: 36px;
     background-image: url("../img/iconcolor/поиск.jpg");
     background-repeat: no-repeat;
-    background-position: right center; }
+    background-position: right 17px center;
+    margin: 11px 36px 11px 0; }
   .page-main .header .menu-bar ::-webkit-input-placeholder {
     opacity: 0.8;
     font-size: 14px;
@@ -191,11 +216,13 @@ ul {
     line-height: 1.2;
     font-weight: 400;
     color: #b3b0b0; }
-  .page-main .header .menu-bar .menulist {
-    display: flex;
-    width: 973px;
-    justify-content: space-between;
-    align-items: center; }
+  .page-main .header .menu-bar .menu {
+    display: flex; }
+    .page-main .header .menu-bar .menu .menulist {
+      display: flex;
+      width: 973px;
+      justify-content: space-between;
+      align-items: center; }
 
 .page-main .container {
   max-width: 1600px;
@@ -216,13 +243,23 @@ ul {
       .page-main .container .filter .veneer .veneer-name {
         font-size: 16px;
         color: #d96e14; }
+      .page-main .container .filter .veneer .veneer-name:hover {
+        text-decoration: underline; }
     .page-main .container .filter .sort-color {
       padding: 23px 0 28px 20px;
       display: none; }
       .page-main .container .filter .sort-color .color:not(:last-child) {
         margin-bottom: 20px; }
       .page-main .container .filter .sort-color .color-name {
-        padding-left: 22px; }
+        padding-left: 22px;
+        display: flex;
+        align-items: center; }
+      .page-main .container .filter .sort-color .color-choise {
+        margin-right: 11px;
+        height: 11px; }
+      .page-main .container .filter .sort-color .color-name:hover {
+        text-decoration: underline;
+        color: #d66d15; }
   .page-main .container .main-section {
     width: 1283px; }
 
@@ -251,7 +288,7 @@ ul {
       width: 319px;
       background-image: url("../img/iconcolor/поиск.jpg");
       background-repeat: no-repeat;
-      background-position: right center; }
+      background-position: right 17px center; }
     .page-main .footer .fullcontainer .container ::-webkit-input-placeholder {
       opacity: 0.8;
       font-size: 14px;
@@ -290,6 +327,8 @@ ul {
         line-height: 20px;
         font-weight: 300;
         color: #ffffff; }
+      .page-main .footer .fullcontainer .container .nav-menu .item-list a:hover {
+        font-weight: 700; }
     .page-main .footer .fullcontainer .container .contact {
       width: 291px;
       text-align: right; }
@@ -299,7 +338,11 @@ ul {
           font-size: 26px;
           line-height: 24px;
           font-weight: 500;
-          color: #ffffff; }
+          color: #ffffff;
+          padding-left: 32px;
+          background-image: url("../img/iconcolor/телефон.jpg");
+          background-repeat: no-repeat;
+          background-position: left center; }
         .page-main .footer .fullcontainer .container .contact .footer-phone .schedule {
           font-size: 14px;
           line-height: 20px;
@@ -314,9 +357,17 @@ ul {
         line-height: 1.2;
         font-weight: 300;
         color: #ffffff;
-        margin-bottom: 28px; }
+        margin-bottom: 28px;
+        padding-left: 27px;
+        background-image: url("../img/iconcolor/почта.jpg");
+        background-repeat: no-repeat;
+        background-position: left center; }
       .page-main .footer .fullcontainer .container .contact .footer-address {
         font-size: 16px;
         line-height: 1.2;
         font-weight: 300;
-        color: #a19f9f; }
+        color: #a19f9f;
+        padding-left: 29px;
+        background-image: url("../img/iconcolor/адрес.jpg");
+        background-repeat: no-repeat;
+        background-position: left top; }
