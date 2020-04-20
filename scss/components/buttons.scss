@@ -1,0 +1,84 @@
+.btn {
+    width: 189px;
+    height: 44px;
+    background-color: #ec7919;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.basket {
+    width: 182px;;
+    padding-left: 50px;
+    background-image: url("../img/iconcolor/корзина.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.menu {
+    display: flex;
+    padding: 11px 0;
+}
+
+.catalog {
+    width: 274px;
+    background-color: #38393e;
+    display: flex;
+    justify-content: center;
+    margin-right: 44px;
+    .burger {
+        display: flex;
+        flex-direction: column;
+        margin-right: 19px;
+        .line {
+            width: 27px;
+            height: 2px;
+            background-color: #ffffff;
+            margin-bottom: 5px;
+        }
+        .line:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .catlogtext {
+        font-size: 20px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
+
+.itembtn {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.doors-name {
+  width: 271px;
+  height: 43px;
+  border: 1.0px solid #d0d0d0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  padding-right: 29px;
+  background-image: url(../img/iconcolor/v-open.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.door-material {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
