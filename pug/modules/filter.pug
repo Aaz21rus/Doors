@@ -1,11 +1,18 @@
 - var doors = ['Межкомнатные двери','Входные двери','Складские двери','Раздвижные двери','Арки и порталы','Для бани и сауны','Противопожарные','Фурнитура']
-- var sortDoors1 = ['Экошпон','Двери','Шпон натуральный','Двери из массива','Двери эмаль','Двери еврошпон','Двери ламинирован.','Двери ПВХ','Двери файн-лайн','Двери стеклянные','Двери 3D-Graf','Двери эмалит','Двери строителям']
+- var interiorDoors1 = ['Экошпон','Двери','Шпон натуральный','Двери из массива','Двери эмаль','Двери еврошпон','Двери ламинирован.','Двери ПВХ','Двери файн-лайн','Двери стеклянные','Двери 3D-Graf','Двери эмалит','Двери строителям']
+- var entranceDoors2 = ['Металлические двери', 'Деревянные двери', 'Пластиковые двери']
+- var warehouseDoors3 = ['Двери ПВХ', 'Ламинированные двери']
+- var slidingDoors4 = ['Экошпон', 'Шпонированные', 'Ламинированные', 'ПВХ', 'Эмаль', 'Массив', 'Стеклянные', '3D-Graf', 'Еврошпон']
+- var archesPortals5 = ['Экошпон', 'Шпонированные Двери', 'ПВХ Двери без отделки']
+- var bathSauna6 = ['Двери из массива', 'Стеклянные двери', 'Двери из сосны', 'Двери из липы']
+- var fireFighting7 = ['Двустворчатые', 'Одностворчатые двери']
+- var Hardware8 = ['Ручки раздельные', 'Петли', 'Замки в комплект', 'Финская фурнитура', 'Замки и защелки', 'Ригели', 'Фурнитура для стеклянных дверей', 'Накладки и фиксаторы',	'Ручки -защелки', 'Фурнитура для дверей купе', 'Упоры и пороги', 'Доводчики Звонки', 'Электронные глазки', 'Прочее']
 - var sortMat1 = [{ link: '#', name: 'Шпон Стандарт' },{ link: '#', name: 'Шпон Евро' },{ link: '#', name: 'Шпон Graffity' }]
 - var sort = [{ link: '#', name:'Двери «Белые»', src:'../img/img/white.png'},{ link: '#', name:'Двери «Светлые»', src:'../img/img/light.png'},{ link: '#', name:'Двери «Венге»', src:'../img/img/white.png'},{ link: '#', name:'Двери «Серые»', src:'../img/img/gray.png'},{ link: '#', name:'Двери «Орех»', src:'../img/img/nut.png'},{ link: '#', name:'Двери «Миланский орех»', src:'../img/img/milan-nut.png'},{ link: '#', name:'Двери «Итальянский орех»', src:'../img/img/italian-nut.png'},{ link: '#', name:'Двери «Темные»', src:'../img/img/dark.png'},{ link: '#', name:'Двери «Коричневые»', src:'../img/img/brown.png'}]
 - var index = ['Двери по цене','Назначение','Модификация','Комплектация','Страна','Двери по цвету','Тип двери','Производитель','Размеры','Двери по стилю','Количество замков','Со скидкой','Распродажа','Новинки']
 - var com = [sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort]
-- var materials = [sortDoors1, sortDoors1, sortDoors1, sortDoors1, sortDoors1, sortDoors1, sortDoors1, sortDoors1]
-- var view = [sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1]
+- var materials = [interiorDoors1, entranceDoors2, warehouseDoors3, slidingDoors4, archesPortals5, bathSauna6, fireFighting7, Hardware8]
+- var view = [sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1]
 aside.filter
   ul.doors
     each val, num in doors

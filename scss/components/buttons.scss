@@ -75,6 +75,9 @@
   line-height: 16px;
   font-weight: 400;
   margin-bottom: 23px;
+  &:hover .point-in{
+    border-color: #ec7919;
+  }
 }
   .point-in {
     width: 8px;
@@ -83,7 +86,24 @@
     border-right: solid 2px black;
     transform: rotate(-45deg) translateX(-25%);
   }
-.door-material:hover .point-in{
-  border-color: #ec7919;
+
+.sale {
+  width: 259px;
+  height: 55px;
+  background-color: #ec7919;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.slider-dot {
+  width: 11px;
+  height: 11px;
+  border: 2.0px solid #ec7919;
+  border-radius: 6px;
+  &:hover {
+    background-color: #ec7919;
+  }
 }
 

@@ -1,0 +1,373 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200421.133138.6604.0.001.json",
+    "dumpEventTime": "2020-04-21T13:31:38Z",
+    "dumpEventTimeStamp": "1587465098698",
+    "processId": 6604,
+    "cwd": "D:\\Skilbox\\MakeMeWeb\\DoorProject\\Doors",
+    "commandLine": [
+      "node",
+      "C:\\Users\\Aahz\\AppData\\Roaming\\npm\\\\node_modules\\gulp-cli\\bin\\gulp.js"
+    ],
+    "nodejsVersion": "v12.6.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.6.0",
+      "v8": "7.5.288.22-node.14",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.6.0/node-v12.6.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.6.0/node-v12.6.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.6.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Home Premium Service Pack 1",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz",
+        "speed": 3392,
+        "user": 1471916,
+        "nice": 0,
+        "sys": 808475,
+        "idle": 17604166,
+        "irq": 214236
+      }
+    ],
+    "host": "Aahz-��"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000013f906db9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10889"
+    },
+    {
+      "pc": "0x000000013f90a72c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+25596"
+    },
+    {
+      "pc": "0x000000013f9096d8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+21416"
+    },
+    {
+      "pc": "0x000000013f9f300b",
+      "symbol": "v8::base::CPU::has_sse+37675"
+    },
+    {
+      "pc": "0x00000001401d8a1e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00000001401c0d6a",
+      "symbol": "v8::SharedArrayBuffer::Externalize+842"
+    },
+    {
+      "pc": "0x000000014005256c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x000000014005a48f",
+      "symbol": "v8::internal::Heap::OldGenerationSizeOfObjects+4879"
+    },
+    {
+      "pc": "0x0000000140050733",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x000000014004efc4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2292"
+    },
+    {
+      "pc": "0x000000014006daa5",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x000000013fe23e0d",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+3757"
+    },
+    {
+      "pc": "0x000000014028170d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+614605"
+    },
+    {
+      "pc": "0x0000000140282643",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+618499"
+    },
+    {
+      "pc": "0x000000beed215442",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2163019776,
+    "totalCommittedMemory": 2163019776,
+    "usedMemory": 2150527312,
+    "availableMemory": 43919408,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 8388608,
+        "committedMemory": 8388608,
+        "capacity": 4189312,
+        "used": 1231872,
+        "available": 2957440
+      },
+      "old_space": {
+        "memorySize": 2147627008,
+        "committedMemory": 2147627008,
+        "capacity": 2144966976,
+        "used": 2143219712,
+        "available": 1747264
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 245760,
+        "used": 245760,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1576960,
+        "committedMemory": 1576960,
+        "capacity": 1138320,
+        "used": 1138320,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 4689920,
+        "committedMemory": 4689920,
+        "capacity": 4656232,
+        "used": 4656232,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 4189312,
+        "used": 0,
+        "available": 4189312
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 46.987,
+    "kernelCpuSeconds": 1.606,
+    "cpuConsumptionPercent": 77.1317,
+    "maxRss": 2293714944,
+    "pageFaults": {
+      "IORequired": 641314,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2700,
+      "writes": 1
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=D:": "D:\\Skilbox\\MakeMeWeb\\DoorProject\\Doors",
+    "=ExitCode": "00000000",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Aahz\\AppData\\Roaming",
+    "asl.log=Destination": "file",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "AAHZ-ПК",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "dp0": "C:\\Users\\Aahz\\AppData\\Roaming\\npm\\",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Aahz",
+    "INIT_CWD": "D:\\Skilbox\\MakeMeWeb\\DoorProject\\Doors",
+    "LOCALAPPDATA": "C:\\Users\\Aahz\\AppData\\Local",
+    "LOGONSERVER": "\\\\AAHZ-ПК",
+    "MOZ_PLUGIN_PATH": "C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OS": "Windows_NT",
+    "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;D:\\Bandizip\\;C:\\Users\\Aahz\\AppData\\Local\\atom\\bin;C:\\Users\\Aahz\\AppData\\Roaming\\npm;C:\\Users\\Aahz\\AppData\\Local\\GitHubDesktop\\bin;D:\\Skilbox\\Microsoft VS Code\\bin;E:\\PhpStorm 2020.1\\bin;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PhpStorm": "E:\\PhpStorm 2020.1\\bin;",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 42 Stepping 7, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2a07",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\Aahz\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Aahz\\AppData\\Local\\Temp",
+    "USERDOMAIN": "Aahz-ПК",
+    "USERNAME": "Aahz",
+    "USERPROFILE": "C:\\Users\\Aahz",
+    "windir": "C:\\Windows",
+    "windows_tracing_flags": "3",
+    "windows_tracing_logfile": "C:\\BVTBin\\Tests\\installpackage\\csilogfile.log",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.44.2",
+    "LANG": "ru_RU.UTF-8",
+    "COLORTERM": "truecolor",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\system32\\kernel32.dll",
+    "C:\\Windows\\system32\\KERNELBASE.dll",
+    "C:\\Windows\\system32\\dbghelp.dll",
+    "C:\\Windows\\system32\\msvcrt.dll",
+    "C:\\Windows\\system32\\WS2_32.dll",
+    "C:\\Windows\\system32\\RPCRT4.dll",
+    "C:\\Windows\\system32\\NSI.dll",
+    "C:\\Windows\\system32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\sechost.dll",
+    "C:\\Windows\\system32\\USER32.dll",
+    "C:\\Windows\\system32\\GDI32.dll",
+    "C:\\Windows\\system32\\LPK.dll",
+    "C:\\Windows\\system32\\USP10.dll",
+    "C:\\Windows\\system32\\IPHLPAPI.DLL",
+    "C:\\Windows\\system32\\WINNSI.DLL",
+    "C:\\Windows\\system32\\PSAPI.DLL",
+    "C:\\Windows\\system32\\USERENV.dll",
+    "C:\\Windows\\system32\\profapi.dll",
+    "C:\\Windows\\system32\\CRYPT32.dll",
+    "C:\\Windows\\system32\\MSASN1.dll",
+    "C:\\Windows\\system32\\bcrypt.dll",
+    "C:\\Windows\\system32\\WINMM.dll",
+    "C:\\Windows\\system32\\IMM32.DLL",
+    "C:\\Windows\\system32\\MSCTF.dll",
+    "C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "C:\\Windows\\system32\\powrprof.dll",
+    "C:\\Windows\\system32\\SETUPAPI.dll",
+    "C:\\Windows\\system32\\CFGMGR32.dll",
+    "C:\\Windows\\system32\\OLEAUT32.dll",
+    "C:\\Windows\\system32\\ole32.dll",
+    "C:\\Windows\\system32\\DEVOBJ.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\wshtcpip.dll",
+    "C:\\Windows\\System32\\wship6.dll",
+    "C:\\Windows\\system32\\bcryptprimitives.dll",
+    "\\\\?\\D:\\Skilbox\\MakeMeWeb\\DoorProject\\Doors\\node_modules\\node-sass\\vendor\\win32-x64-72\\binding.node",
+    "C:\\Windows\\system32\\cryptbase.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll"
+  ]
+}

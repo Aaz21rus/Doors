@@ -53,6 +53,11 @@ button {
 ul {
   list-style: none; }
 
+.headling1 {
+  font-size: 50px;
+  line-height: 50x;
+  font-weight: 500; }
+
 .headling3 {
   font-size: 24px;
   line-height: 16px;
@@ -130,6 +135,8 @@ ul {
   line-height: 16px;
   font-weight: 400;
   margin-bottom: 23px; }
+  .door-material:hover .point-in {
+    border-color: #ec7919; }
 
 .point-in {
   width: 8px;
@@ -139,8 +146,22 @@ ul {
   -webkit-transform: rotate(-45deg) translateX(-25%);
   transform: rotate(-45deg) translateX(-25%); }
 
-.door-material:hover .point-in {
-  border-color: #ec7919; }
+.sale {
+  width: 259px;
+  height: 55px;
+  background-color: #ec7919;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff; }
+
+.slider-dot {
+  width: 11px;
+  height: 11px;
+  border: 2.0px solid #ec7919;
+  border-radius: 6px; }
+  .slider-dot:hover {
+    background-color: #ec7919; }
 
 .page-main .header .container {
   max-width: 1600px;
@@ -243,8 +264,8 @@ ul {
       .page-main .container .filter .veneer .veneer-name {
         font-size: 16px;
         color: #d96e14; }
-      .page-main .container .filter .veneer .veneer-name:hover {
-        text-decoration: underline; }
+        .page-main .container .filter .veneer .veneer-name:hover {
+          text-decoration: underline; }
     .page-main .container .filter .sort-color {
       padding: 23px 0 28px 20px;
       display: none; }
@@ -262,6 +283,35 @@ ul {
         color: #d66d15; }
   .page-main .container .main-section {
     width: 1283px; }
+    .page-main .container .main-section .slider {
+      height: 442px;
+      background-image: url(../img/img/slide-desktop-1.jpeg);
+      background-position-x: -108px;
+      margin-bottom: 50px;
+      position: relative; }
+      .page-main .container .main-section .slider .new-year {
+        width: 476px;
+        height: 398px;
+        opacity: 0.25; }
+      .page-main .container .main-section .slider .slider-news {
+        position: absolute;
+        top: 120px;
+        left: 285px; }
+        .page-main .container .main-section .slider .slider-news > .headling1 {
+          margin-bottom: 24px; }
+        .page-main .container .main-section .slider .slider-news .text {
+          font-size: 30px;
+          font-weight: 300;
+          line-height: 30px;
+          margin-bottom: 31px; }
+    .page-main .container .main-section .slider-btn {
+      margin-bottom: 80px;
+      display: flex;
+      justify-content: center; }
+      .page-main .container .main-section .slider-btn .item:not(:last-child) {
+        margin-right: 23px; }
+    .page-main .container .main-section .content {
+      display: flex; }
 
 .page-main .footer .fullcontainer {
   background-color: #525358; }
@@ -318,11 +368,9 @@ ul {
       columns: 2;
       -webkit-column-gap: 105px;
       column-gap: 105px; }
-      .page-main .footer .fullcontainer .container .nav-menu .item-list {
-        width: 100%; }
       .page-main .footer .fullcontainer .container .nav-menu .item-list:not(:last-child) {
         margin-bottom: 22px; }
-      .page-main .footer .fullcontainer .container .nav-menu .item-list a {
+      .page-main .footer .fullcontainer .container .nav-menu .item-nav {
         font-size: 20px;
         line-height: 20px;
         font-weight: 300;
@@ -330,7 +378,7 @@ ul {
       .page-main .footer .fullcontainer .container .nav-menu .item-list a:hover {
         font-weight: 700; }
     .page-main .footer .fullcontainer .container .contact {
-      width: 291px;
+      width: 293px;
       text-align: right; }
       .page-main .footer .fullcontainer .container .contact .footer-phone {
         margin-bottom: 26px; }
@@ -340,7 +388,7 @@ ul {
           font-weight: 500;
           color: #ffffff;
           padding-left: 32px;
-          background-image: url("../img/iconcolor/телефон.jpg");
+          background-image: url("../img/iconcolor/phone.png");
           background-repeat: no-repeat;
           background-position: left center; }
         .page-main .footer .fullcontainer .container .contact .footer-phone .schedule {
@@ -350,16 +398,17 @@ ul {
           color: #9c9a9a; }
           .page-main .footer .fullcontainer .container .contact .footer-phone .schedule .day {
             font-weight: 400;
-            color: #ffffff; }
+            color: #ffffff;
+            margin: 0 3px; }
       .page-main .footer .fullcontainer .container .contact .mail-link {
-        display: block;
+        display: inline-block;
         font-size: 20px;
         line-height: 1.2;
         font-weight: 300;
         color: #ffffff;
         margin-bottom: 28px;
         padding-left: 27px;
-        background-image: url("../img/iconcolor/почта.jpg");
+        background-image: url("../img/iconcolor/mail.png");
         background-repeat: no-repeat;
         background-position: left center; }
       .page-main .footer .fullcontainer .container .contact .footer-address {
@@ -368,6 +417,6 @@ ul {
         font-weight: 300;
         color: #a19f9f;
         padding-left: 29px;
-        background-image: url("../img/iconcolor/адрес.jpg");
+        background-image: url("../img/iconcolor/adres.png");
         background-repeat: no-repeat;
         background-position: left top; }

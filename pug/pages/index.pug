@@ -1,3 +1,14 @@
+- var doors = ['Межкомнатные двери','Входные двери','Раздвижные двери','Складские двери','Арки и порталы','Противопожарные','Для бани и сауны','Фурнитура']
+//- - var interiorDoors1 = ['Двери экошпон','Шпон натуральный','Двери из массива','Двери эмаль','Двери еврошпон','Двери ламинирован.','Двери ПВХ','Двери файн-лайн','Двери стеклянные','Двери 3D-Graf','Двери эмалит','Двери строителям']
+- var interiorModels1 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
+- var entranceDoors2 = [{src:"../img/img/d1.jpeg", text:"Металл", count:"3251 моделей"},{src:"../img/img/d2.jpeg", text:"Дерево", count:"1025 моделей"},{src:"../img/img/d3.jpeg", text:"Пластик", count:"2050 моделей"}]
+- var slidingDoors3 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
+- var warehouseDoors4 = [{src:"../img/img/d1.jpeg", text:"ПВХ", count:"3251 моделей"},{src:"../img/img/d2.jpeg", text:"Ламинированные", count:"1025 моделей"}]
+- var archesPortals5 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
+- var fireFighting6 = [{src:"../img/img/d1.jpeg", text:"ПВХ", count:"3251 моделей"},{src:"../img/img/d2.jpeg", text:"Ламинированные", count:"1025 моделей"}]
+- var bathSauna7 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
+- var Hardware8 =  [{src:"../img/img/d1.jpeg", text:"Металл", count:"3251 моделей"},{src:"../img/img/d2.jpeg", text:"Дерево", count:"1025 моделей"},{src:"../img/img/d3.jpeg", text:"Пластик", count:"2050 моделей"}]
+- var materials = [interiorDoors1, entranceDoors2, slidingDoors3, warehouseDoors4, archesPortals5, fireFighting6, bathSauna7, Hardware8]
 <!DOCTYPE html>
 html(lang="ru")
   head
@@ -11,6 +22,27 @@ html(lang="ru")
       .container
         include ../modules/filter
         section.main-section
+          .slider
+            //- img(src="img/img/slide-desktop-1.jpeg", alt="slide").slide-img
+            img.new-year(src="img/img/dde71a2a (1).png", alt="branch")
+            .slider-news
+              h1.headling1 Новогодние скидки!
+              p.text С 24 декабря по 20 января
+              button.sale Перейти к распродаже
+          ul.slider-btn
+            for i in ['','','','','','']
+              li.item
+                button.slider-dot
+          ul.content
+            for i, num in doors 
+              li.doors-kind
+                h2.headling2=i 
+                ul.models 
+                  for j in materials
+                    li.model-item
+                      img(src=j.src, alt="img").m-img
+                      p.m-title=j.text
+                      p.m-count=j.count 
     include ../modules/footer
 
 

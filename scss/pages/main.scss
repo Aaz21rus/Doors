@@ -106,9 +106,9 @@
         .veneer-name {
           font-size: 16px;
           color: #d96e14;
-        }
-        .veneer-name:hover {
-          text-decoration: underline;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
       .sort-color {
@@ -134,9 +134,46 @@
     }
     .main-section {
       width: 1283px;
-    }
+      .slider {
+        // width: 1283px;
+        height: 442px;
+        background-image: url(../img/img/slide-desktop-1.jpeg);
+        background-position-x: -108px;
+        margin-bottom: 50px;
+        position: relative;
+        .new-year {
+          width: 476px;
+          height: 398px;
+          opacity: 0.25;
+        }
+        .slider-news {
+          position: absolute;
+          top: 120px;
+          left: 285px;
+          >.headling1 {
+            margin-bottom: 24px;
+          }
+          .text {
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 30px;
+            margin-bottom: 31px;
+          }
+        }
+      }
+      .slider-btn {
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        .item:not(:last-child) {
+          margin-right: 23px;
+        }
+      }
+      .content {
+        display: flex;
+      }
+    } 
   }
-
   .footer {
     .fullcontainer {
       background-color: #525358;
@@ -177,13 +214,11 @@
         .nav-menu {
           columns: 2;
           column-gap: 105px;
-          .item-list {
-            width: 100%;
-          }
+        
           .item-list:not(:last-child) {
             margin-bottom: 22px;
           }
-          .item-list a {
+          .item-nav {
             font-size: 20px;
             line-height: 20px;
             font-weight: 300;
@@ -194,7 +229,7 @@
           }
         }
         .contact {
-          width: 291px;
+          width: 293px;
           text-align: right;
           .footer-phone {
             margin-bottom: 26px;
@@ -204,7 +239,7 @@
               font-weight: 500;
               color: #ffffff;
               padding-left: 32px;
-              background-image: url("../img/iconcolor/телефон.jpg");
+              background-image: url("../img/iconcolor/phone.png");
               background-repeat: no-repeat;
               background-position: left center;
             }
@@ -216,18 +251,19 @@
               .day  {
                 font-weight: 400;
                 color: #ffffff;
+                margin: 0 3px;
               }
             }
           }
           .mail-link {
-            display: block;
+            display: inline-block;
             font-size: 20px;
             line-height: 1.2;
             font-weight: 300;
             color: #ffffff;
             margin-bottom: 28px;
             padding-left: 27px;
-            background-image: url("../img/iconcolor/почта.jpg");
+            background-image: url("../img/iconcolor/mail.png");
             background-repeat: no-repeat;
             background-position: left center;
           }
@@ -237,7 +273,7 @@
             font-weight: 300;
             color: #a19f9f;
             padding-left: 29px;
-            background-image: url("../img/iconcolor/адрес.jpg");
+            background-image: url("../img/iconcolor/adres.png");
             background-repeat: no-repeat;
             background-position: left top;
           }
