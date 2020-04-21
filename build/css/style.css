@@ -58,6 +58,11 @@ ul {
   line-height: 50x;
   font-weight: 500; }
 
+.headling2 {
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 500; }
+
 .headling3 {
   font-size: 24px;
   line-height: 16px;
@@ -282,7 +287,8 @@ ul {
         text-decoration: underline;
         color: #d66d15; }
   .page-main .container .main-section {
-    width: 1283px; }
+    width: 1283px;
+    margin-bottom: 40px; }
     .page-main .container .main-section .slider {
       height: 442px;
       background-image: url(../img/img/slide-desktop-1.jpeg);
@@ -311,10 +317,50 @@ ul {
       .page-main .container .main-section .slider-btn .item:not(:last-child) {
         margin-right: 23px; }
     .page-main .container .main-section .content {
-      display: flex; }
+      display: flex;
+      flex-wrap: wrap; }
+      .page-main .container .main-section .content .doors-kind {
+        margin-right: 183px;
+        width: 637px; }
+        .page-main .container .main-section .content .doors-kind:nth-child(2n) {
+          margin-right: 0;
+          width: 457px; }
+        .page-main .container .main-section .content .doors-kind > .headling2 {
+          margin-bottom: 26px; }
+        .page-main .container .main-section .content .doors-kind .models {
+          display: flex;
+          margin-bottom: 36px; }
+          .page-main .container .main-section .content .doors-kind .models .model-item {
+            width: 104px;
+            height: 325px;
+            text-align: center; }
+            .page-main .container .main-section .content .doors-kind .models .model-item:not(:last-child) {
+              margin-right: 74px; }
+            .page-main .container .main-section .content .doors-kind .models .model-item .m-img {
+              height: 240px;
+              margin-bottom: 19px; }
+            .page-main .container .main-section .content .doors-kind .models .model-item .m-title {
+              text-align: center;
+              font-size: 20px;
+              line-height: 22px;
+              font-weight: 500;
+              margin-bottom: 14px; }
+            .page-main .container .main-section .content .doors-kind .models .model-item .m-count {
+              font-size: 16px;
+              line-height: 18px;
+              font-weight: 300; }
+        .page-main .container .main-section .content .doors-kind .m-link {
+          margin-bottom: 72px; }
+          .page-main .container .main-section .content .doors-kind .m-link .doorLink {
+            display: inline-block;
+            margin-right: 6px;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+            color: #ec7919; }
 
 .page-main .footer .fullcontainer {
-  background-color: #525358; }
+  background-color: #35363b; }
   .page-main .footer .fullcontainer .container {
     max-width: 1600px;
     margin: 0 auto;

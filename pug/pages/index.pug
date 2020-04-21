@@ -1,12 +1,12 @@
 - var doors = ['Межкомнатные двери','Входные двери','Раздвижные двери','Складские двери','Арки и порталы','Противопожарные','Для бани и сауны','Фурнитура']
 - var interiorDoors1 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
 - var entranceDoors2 = [{src:"../img/img/d1.jpeg", text:"Металл", count:"3251 моделей"},{src:"../img/img/d1.jpeg", text:"Дерево", count:"1025 моделей"},{src:"../img/img/d1.jpeg", text:"Пластик", count:"2050 моделей"}]
-- var slidingDoors3 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
+- var slidingDoors3 = [{src:"../img/img/d1.jpeg", text:"Экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Стеклянные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Эмаль", count:"1050 моделей"}]
 - var warehouseDoors4 = [{src:"../img/img/d1.jpeg", text:"ПВХ", count:"3251 моделей"},{src:"../img/img/d1.jpeg", text:"Ламинированные", count:"1025 моделей"}]
-- var archesPortals5 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
-- var fireFighting6 = [{src:"../img/img/d1.jpeg", text:"ПВХ", count:"3251 моделей"},{src:"../img/img/d1.jpeg", text:"Ламинированные", count:"1025 моделей"}]
-- var bathSauna7 = [{src:"../img/img/d1.jpeg", text:"Двери экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Двери ламинированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Двери ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Двери эмалит", count:"1050 моделей"}]
-- var hardware8 =  [{src:"../img/img/d1.jpeg", text:"Металл", count:"3251 моделей"},{src:"../img/img/d1.jpeg", text:"Дерево", count:"1025 моделей"},{src:"../img/img/d1.jpeg", text:"Пластик", count:"2050 моделей"}]
+- var archesPortals5 = [{src:"../img/img/d1.jpeg", text:"Экошпон", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Шпонированные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"ПВХ", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Без отделки", count:"1050 моделей"}]
+- var fireFighting6 = [{src:"../img/img/d1.jpeg", text:"1 створка", count:"3251 моделей"},{src:"../img/img/d1.jpeg", text:"2 створки", count:"1025 моделей"}]
+- var bathSauna7 = [{src:"../img/img/d1.jpeg", text:"Массив", count:"250 моделей"},{src:"../img/img/d2.jpeg", text:"Стеклянные", count:"3050 моделей"},{src:"../img/img/d3.jpeg", text:"Сосна", count:"752 моделей"},{src:"../img/img/d4.jpeg", text:"Липа", count:"1050 моделей"}]
+- var hardware8 =  [{src:"../img/img/d1.jpeg", text:"Ручки", count:"3251 моделей"},{src:"../img/img/d1.jpeg", text:"Петли", count:"1025 моделей"},{src:"../img/img/d1.jpeg", text:"Замки", count:"2050 моделей"}]
 - var models = [interiorDoors1, entranceDoors2, slidingDoors3, warehouseDoors4, archesPortals5, fireFighting6, bathSauna7, hardware8]
 - var linkinterio1 = ['Двери экошпон', 'Шпон натуральный', 'Двери из массива', 'Двери эмаль', 'Двери еврошпон', 'Двери ламинированные', 'Двери ПВХ', 'Двери файн-лайн', 'Двери стеклянные', '3D-Graf', 'Двери эмалит', 'Двери строителям']
 - var linkentranceDoors2 = ['Металлические двери', 'Деревянные двери', 'Пластиковые двери']
@@ -50,9 +50,9 @@ html(lang="ru")
                       img(src=j.src, alt="img").m-img
                       p.m-title=j.text
                       p.m-count=j.count
-              p.m-link
-                each a in link[num]
-                  a(href="a")
+                .m-link
+                  each b in link[num]
+                    a(href="#").doorLink=b
     include ../modules/footer
 
 

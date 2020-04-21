@@ -134,6 +134,7 @@
     }
     .main-section {
       width: 1283px;
+      margin-bottom: 40px;
       .slider {
         // width: 1283px;
         height: 442px;
@@ -171,12 +172,63 @@
       }
       .content {
         display: flex;
+        flex-wrap: wrap;
+        .doors-kind {
+          margin-right: 183px;
+          width: 637px;
+          &:nth-child(2n) {
+            margin-right: 0;
+            width: 457px;
+          }
+          >.headling2 {
+            margin-bottom: 26px;
+          }
+          .models {
+            display: flex;
+            margin-bottom: 36px;
+            .model-item {
+              width: 104px;
+              height: 325px;
+              text-align: center;
+              &:not(:last-child) {
+                margin-right: 74px;
+              }
+              .m-img {  
+                height: 240px;
+                margin-bottom: 19px;
+              }
+              .m-title {
+                text-align: center;
+                font-size: 20px;
+                line-height: 22px;
+                font-weight: 500;
+                margin-bottom: 14px;
+              }
+              .m-count {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 300;
+              } 
+            }
+          }
+          .m-link {
+            margin-bottom: 72px;
+            .doorLink {
+              display: inline-block;
+              margin-right: 6px;
+              font-size: 20px;
+              line-height: 28px;
+              font-weight: 500;
+              color: #ec7919;
+            }
+          }
+        }    
       }
     } 
   }
   .footer {
     .fullcontainer {
-      background-color: #525358;
+      background-color: #35363b;
       .container {
         max-width: 1600px;
         margin: 0 auto;
