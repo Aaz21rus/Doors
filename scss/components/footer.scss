@@ -1,0 +1,107 @@
+.footer {
+  .fullcontainer {
+    background-color: #35363b;
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      padding: 82px 0;
+      justify-content: space-between;
+      align-items: center;
+      .logo-footer {
+        width: 298px;
+        height: 89px;
+      }
+      .discount {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #989696;
+        margin-bottom: 13px;
+      }
+      .footersearch {
+        padding: 12px 33px 10px 18px;
+        width: 319px;
+        background-image: url("../img/iconcolor/поиск.jpg");
+        background-repeat: no-repeat;
+        background-position: right 17px center;
+        &::placeholder {
+          opacity: 0.8;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 400;
+          color: #b3b0b0;
+        }
+      }
+      .nav-menu {
+        columns: 2;
+        column-gap: 105px;
+
+        .item-list:not(:last-child) {
+          margin-bottom: 22px;
+        }
+        .item-nav {
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 300;
+          color: #ffffff;
+        }
+        .item-list a:hover {
+          font-weight: 700;
+        }
+      }
+      .contact {
+        width: 293px;
+        text-align: right;
+        .footer-phone {
+          margin-bottom: 26px;
+          .foter-tel {
+            font-size: 26px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #ffffff;
+            padding-left: 32px;
+            background-image: url("../img/iconcolor/phone.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+          }
+          .schedule {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #9c9a9a;
+            .day  {
+              font-weight: 400;
+              color: #ffffff;
+              margin: 0 3px;
+            }
+          }
+        }
+        .mail-link {
+          display: inline-block;
+          font-size: 20px;
+          line-height: 1.2;
+          font-weight: 300;
+          color: #ffffff;
+          margin-bottom: 28px;
+          padding-left: 27px;
+          background-image: url("../img/iconcolor/mail.png");
+          background-repeat: no-repeat;
+          background-position: left center;
+        }
+        .footer-address {
+          font-size: 16px;
+          line-height: 1.2;
+          font-weight: 300;
+          color: #a19f9f;
+          padding-left: 29px;
+          background-image: url("../img/iconcolor/adres.png");
+          background-repeat: no-repeat;
+          background-position: left top;
+        }
+      }
+    }
+  }
+}

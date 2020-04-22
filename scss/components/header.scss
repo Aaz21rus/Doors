@@ -1,0 +1,84 @@
+.header {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+
+    .head {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 19px 0 15px 0;
+
+      .logo {
+        display: block;
+        height: 89px;
+      }
+
+      .tel {
+        padding-left: 29px;
+        background-image: url("../img/iconcolor/телефон.jpg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        margin-right: 16px;
+        font-size: 26px;
+        line-height: 24px;
+        font-weight: 500;
+      }
+
+      .basket {
+        width: 182px;;
+        padding-left: 50px;
+        background-image: url("../img/iconcolor/корзина.jpg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        text-align: left;
+        .good-num {
+          font-weight: 500;
+          margin-right: 5px;
+        }
+        .good-price {
+          font-weight: 500;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .menu-bar {
+    background-color: #525358;
+    margin-bottom: 20px;
+
+    .search {
+      padding: 0 17px 0px 18px;
+      width: 273px;
+      height: 36px;
+      background-image: url("../img/iconcolor/поиск.jpg");
+      background-repeat: no-repeat;
+      background-position: right 17px center;
+      margin: 11px 36px 11px 0;
+    }
+
+    ::placeholder {
+      opacity: 0.8;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #b3b0b0;
+    }
+
+    .menu {
+      display: flex;
+      .menulist {
+        display: flex;
+        width: 973px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
