@@ -8,11 +8,12 @@
 - var fireFighting7 = ['Двустворчатые', 'Одностворчатые двери']
 - var Hardware8 = ['Ручки раздельные', 'Петли', 'Замки в комплект', 'Финская фурнитура', 'Замки и защелки', 'Ригели', 'Фурнитура для стеклянных дверей', 'Накладки и фиксаторы',	'Ручки -защелки', 'Фурнитура для дверей купе', 'Упоры и пороги', 'Доводчики Звонки', 'Электронные глазки', 'Прочее']
 - var sortMat1 = [{ link: '#', name: 'Шпон Стандарт' },{ link: '#', name: 'Шпон Евро' },{ link: '#', name: 'Шпон Graffity' }]
-- var sort = [{ link: '#', name:'Двери «Белые»', src:'../img/img/white.png'},{ link: '#', name:'Двери «Светлые»', src:'../img/img/light.png'},{ link: '#', name:'Двери «Венге»', src:'../img/img/white.png'},{ link: '#', name:'Двери «Серые»', src:'../img/img/gray.png'},{ link: '#', name:'Двери «Орех»', src:'../img/img/nut.png'},{ link: '#', name:'Двери «Миланский орех»', src:'../img/img/milan-nut.png'},{ link: '#', name:'Двери «Итальянский орех»', src:'../img/img/italian-nut.png'},{ link: '#', name:'Двери «Темные»', src:'../img/img/dark.png'},{ link: '#', name:'Двери «Коричневые»', src:'../img/img/brown.png'}]
+- var sort = [{ link: '#', name:'Двери «Белые»', src:'../img/img/white.png', color: '#ab5c72'},{ link: '#', name:'Двери «Светлые»', src:'../img/img/light.png', color: '#229a1d'},{ link: '#', name:'Двери «Венге»', src:'../img/img/white.png'},{ link: '#', name:'Двери «Серые»', src:'../img/img/gray.png'},{ link: '#', name:'Двери «Орех»', src:'../img/img/nut.png'},{ link: '#', name:'Двери «Миланский орех»', src:'../img/img/milan-nut.png'},{ link: '#', name:'Двери «Итальянский орех»', src:'../img/img/italian-nut.png'},{ link: '#', name:'Двери «Темные»', src:'../img/img/dark.png'},{ link: '#', name:'Двери «Коричневые»', src:'../img/img/brown.png'}]
 - var index = ['Двери по цене','Назначение','Модификация','Комплектация','Страна','Двери по цвету','Тип двери','Производитель','Размеры','Двери по стилю','Количество замков','Со скидкой','Распродажа','Новинки']
 - var com = [sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort, sort]
 - var materials = [interiorDoors1, entranceDoors2, warehouseDoors3, slidingDoors4, archesPortals5, bathSauna6, fireFighting7, Hardware8]
 - var view = [sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1]
+
 aside.filter
   ul.doors
     each val, num in doors
@@ -28,15 +29,18 @@ aside.filter
                 each k in view[count]
                   li.veneer-item
                     a(href=k.link).veneer-name=k.name
+
   h3.headling3 Двери по парамертам
+
   ul.doors-sort
     each val, num in index
       li
         button.doors-name=val
           .point
+
         ul.sort-color
           each e in com[num]
             li.color
               a(href=e.link).color-name
-                img(src=e.src, alt="color").color-choise
+                div.circle(style={'background-color': e.color})
                 p.color-title=e.name

@@ -3,11 +3,21 @@ const pug = require('gulp-pug')
 const scss = require('gulp-sass')
 const bs = require('browser-sync')
 const autoprefixer = require('gulp-autoprefixer')
+const plumber = require('gulp-plumber')
+const notify = require('gulp-notify')
 // const minifyCSS = require('gulp-csso')
 // const concat = require('gulp-concat')
 
 function html() {
   return src('pug/pages/*.pug')
+    .pipe(plumber({
+      errorHandler: notify.onError(function (err) {
+        return {
+          title: 'Pug Error',
+          message: err.message
+        }
+      })
+    }))
     .pipe(pug({
       pretty: true
     }))
@@ -16,6 +26,14 @@ function html() {
 
 function css() {
   return src('scss/style.scss')
+    .pipe(plumber({
+      errorHandler: notify.onError(function (err) {
+        return {
+          title: 'SCSS Error',
+          message: err.message
+        }
+      })
+    }))
     .pipe(scss())
     // .pipe(minifyCSS())
     .pipe(autoprefixer({ cascade: false }))

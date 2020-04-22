@@ -1,1 +1,5 @@
 node_modules/
+build/
+report*
+yarn.lock
+package-lock.json

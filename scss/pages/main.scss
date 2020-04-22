@@ -113,7 +113,7 @@
       }
       .sort-color {
         padding: 23px 0 28px 20px;
-        display: none;
+        // display: none;
         .color:not(:last-child) {
           margin-bottom: 20px;
         }
@@ -121,6 +121,14 @@
           padding-left: 22px;
           display: flex;
           align-items: center;
+
+          .circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 15px;
+          }
         }
           .color-choise {
             margin-right: 11px;
@@ -193,7 +201,7 @@
               &:not(:last-child) {
                 margin-right: 74px;
               }
-              .m-img {  
+              .m-img {
                 height: 240px;
                 margin-bottom: 19px;
               }
@@ -208,7 +216,7 @@
                 font-size: 16px;
                 line-height: 18px;
                 font-weight: 300;
-              } 
+              }
             }
           }
           .m-link {
@@ -222,9 +230,9 @@
               color: #ec7919;
             }
           }
-        }    
+        }
       }
-    } 
+    }
   }
   .footer {
     .fullcontainer {
@@ -266,7 +274,7 @@
         .nav-menu {
           columns: 2;
           column-gap: 105px;
-        
+
           .item-list:not(:last-child) {
             margin-bottom: 22px;
           }
