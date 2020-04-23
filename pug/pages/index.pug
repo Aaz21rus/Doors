@@ -25,10 +25,14 @@ html(lang="ru")
     title Двери тут
     link(rel="stylesheet", href="css/style.css")
   body.page-main
+
     include ../modules/header
+
     main.main
       .container
+
         include ../modules/filter
+
         section.main-section
           .slider
             img.new-year(src="img/img/dde71a2a (1).png", alt="branch")
@@ -46,13 +50,14 @@ html(lang="ru")
                 h2.headling2=i
                 ul.models
                   each j in models[num]
-                    li.model-item
+                    li.model-item.itemThree
                       img(src=j.src, alt="img").m-img
                       p.m-title=j.text
                       p.m-count=j.count
                 .m-link
                   each b in link[num]
                     a(href="#").doorLink=b
+                    
     include ../modules/footer
 
 
