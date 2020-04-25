@@ -1,0 +1,72 @@
+- var option1 = ["Классика"]
+- var option2 = ["Темно-коричневые"]
+- var option3 = ["Ламинированные"]
+- var option4 = ["Раздвижная"]
+- var option5 = ["Ширина 90 см"]
+- var option6 = ["Со скидкой"]
+- var select = [option1, option2, option3, option4, option5, option6]
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Двери тут
+    link(rel="stylesheet", href="css/catalogGoods.css")
+  body.page-catalog
+
+    include ../modules/header
+
+    main.main
+      .container
+
+        include ../modules/filter
+
+        section.main-section
+          .index
+            a(href="#").index-text Главная
+            .index-text >
+            .index-text.choose Межкомнатные двери
+          .sorting
+            for i, n in ["стиль", "цвет", "материал", "тип двери", "размеры", "прочее" ]
+              p.select-feture=i
+                for j in select[n]
+                  select(name=i).feature
+                    option(value=j).feature-option=j
+            button.sort Применить
+            button.sort-cancel Сбросить
+            p.find Найдено
+              span.find-goods 952
+              | товара
+          .headling2 Межкомнатные двери от производителя
+          .picking
+            .price-sort
+              button.price Дороже
+              button.price Дешевле
+            .show
+              button.showAll Показать все
+              p.page-number выводить по
+                select(name="number").page
+                  option(value="40").number 40
+          ul.goods-list
+            for i in ["","","","","","","","","","","","","","","","","","","","","","","","","","","","",]
+              li.item
+                img(src="img/img/d1.jpeg", alt="img").goods-img
+                p.goods-name Евро-40
+                p.goods-color Белый дуб
+                p.old-price 5 783 руб
+                p.new-price 4 300 руб
+                button.in-basket В корзину
+          button.more-goods Показать еще (всего 952 товаров)
+          .pages-list
+            button.arrow
+              .left
+            ul.button-number
+              for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                li.btn-number
+                  button.count=i
+            p.dots ...
+            button.count.last 25
+            button.arrow
+              .right
+
+

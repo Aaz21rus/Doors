@@ -107,3 +107,75 @@
   }
 }
 
+.sort {
+  width: 131px;
+  height: 44px;
+  background-color: #ec7919;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.sort-cancel {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ec7919;
+}
+
+.price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #ec7919;
+}
+
+.showAll {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ec7919;
+}
+
+.page-number {
+  font-size: 15px;
+  line-height: 15;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.in-basket {
+  width: 136px;
+  height: 39px;
+  background-color: #ec7919;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.arrow {
+  width: 47px;
+  height: 47px;
+  background-color: #fafafa;
+  border: 1.0px solid #525358;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  &:hover {
+    background-color: #ec7919;
+    color: #ffffff;
+  }
+}
+
+

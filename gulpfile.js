@@ -25,7 +25,7 @@ function html() {
 }
 
 function css() {
-  return src('scss/style.scss')
+  return src('scss/*.scss')
     .pipe(plumber({
       errorHandler: notify.onError(function (err) {
         return {
