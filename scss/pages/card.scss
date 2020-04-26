@@ -1,0 +1,149 @@
+.container {
+  max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+
+  .main-section {
+    width: 100%;
+
+    .index {
+      display: flex;
+      margin-bottom: 42px;
+      .index-text {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #ec7919;
+        margin-right: 10px;
+      }
+      .choose {
+        font-weight: 300;
+        color: #525358;
+      }
+    }
+
+    .headling2 {
+      width: 85%;
+      margin-bottom: 34px;
+      .vendor-code {
+        margin-left: 25px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 500;
+        color: #525358;
+      }
+    }
+
+    .card {
+      margin-bottom: 75px;
+      display: flex;
+      .card-img {
+        width: 43%;
+        height: 856px;
+        margin-right: 28px;
+      }
+      .description {
+        width: 100%;
+        .priceDoor {
+          margin-bottom: 38px;
+          .doorsAmount {
+            display: flex;
+            justify-content: space-between;
+            .amount {
+              display: flex;
+              justify-content: space-between;
+              width: 77.65%;
+              margin-bottom: 3px;
+              .choose-number {
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+                .star {
+                  color: #ec7919;
+                  margin-left: 4px;
+                }
+              }
+              .discount {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #ec7919;
+              }
+              .list-number {
+                display: flex;
+                .number-btn:not(:last-child) {
+                  margin-right: 5px;
+                }
+              }
+            }
+            .in-stock {
+              padding-left: 29px;
+              background-image: url("../img/iconcolor/galka_6328.png");
+              background-repeat: no-repeat;
+              background-position: left top;
+              font-size: 18px;
+              line-height: 20px;
+              font-weight: 400;
+              color: #009100;
+            }
+          }
+          .doorsSet {
+            display: flex;
+            .priceForDoors {
+              display: flex;
+              justify-content: space-between;
+              padding: 16px 16px 14px 33px;
+              width: 71.65%;
+              border: 1.0px solid #dcdcdc;
+              .oldPrice {
+                font-size: 25px;
+                line-height: 28px;
+                font-weight: 500;
+                color: #929090;
+                text-decoration: line-through;
+                margin-bottom: 15px;
+              }
+              .newPrice {
+                font-size: 30px;
+                line-height: 28px;
+                font-weight: 700;
+                color: #27282d;
+                margin-bottom: 12px;
+                cursor: pointer;
+                &:hover {
+                  color: #e73636;
+                }
+              }
+              .priceMeasure {
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 400;
+                color: #27282d;
+              }
+              .setDetails {
+                width: 40%;
+                padding: 21px 16px 18px 24px;
+                font-size: 16px;
+                font-weight: 400;
+                // opacity: 0.4;
+                background-color: #f3f3f3;
+                .setTitle {
+                  line-height: 25px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                }
+              }
+            }
+            .buy {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

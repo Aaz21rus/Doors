@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Двери тут
+    link(rel="stylesheet", href="css/cardGoods.css")
+  body.page-cardGoods
+
+    include ../modules/header
+
+    main.main
+      .container
+
+        include ../modules/filter
+
+        section.main-section
+          .index
+            a(href="#").index-text Главная
+            .index-text >
+            a(href="#").index-text Межкомнатные двери
+            .index-text >
+            a(href="#").index-text Шпон файн-лайн
+            .index-text >
+            a(href="#").index-text Шпон Евро
+            .index-text >
+            a(href="#").index-text.choose Евро-41
+
+          h2.headling2 Дверь межкомнатная шпонированная «Евро-41» БелДуб (Шпон файн-лайн) остекление Сатинато белое
+            |
+            span.vendor-code Артикул: 004-01071
+
+          .card
+            img(src="img/img/d2.jpeg", alt="img").card-img
+            .description
+              .priceDoor
+                .doorsAmount
+                  .amount
+                    .amount-text
+                      .choose-number Выберите количество дверей
+                        |
+                        span.star *
+                      .discount Цена уменьшается пропорционально количеству
+                    ul.list-number
+                      for i in ["1", "2", "3", "4", "5"]
+                        li.number-btn
+                          button.num=i
+                  .in-stock В наличии
+                .doorsSet
+                  .priceForDoors
+                    .door-leaf
+                      .oldPrice 6 525 руб.
+                      .newPrice.hotDiscount 5 500 руб.
+                      .priceMeasure.hotDiscount Цена за полотно
+                    .door-set
+                      .oldPrice 9 525 руб.
+                      .newPrice 7 252 руб.
+                      .priceMeasure Цена за комплект
+                    .setDetails
+                      span.setTitle Цена за комлект
+                      br
+                      | Комплект состоит из коробки, полотна и наличников с двух сторон.
+                  .buy
+                    .btnContainer
+                      button.sentBasket В корзину
+                      button.sentBasket Купить в 1 клик
+
+              .size
+
+              .specification
+
+
