@@ -195,6 +195,19 @@
   line-height: 24px;
   font-weight: 500;
   color: #ec7919;
+  &:hover {
+    background-color: #ec7919;
+    color: #ffffff;
+  }
+}
+
+.but {
+  border: 1.5px solid #ec7919;
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #ec7919;
 }
 
 

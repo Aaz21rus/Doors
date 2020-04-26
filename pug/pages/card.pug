@@ -66,7 +66,41 @@ html(lang="ru")
                       button.sentBasket Купить в 1 клик
 
               .size
+                .chooseSize
+                  ul.listSize 
+                    li.itemTitle Размеры
+                    for i in ["200*60", "200*70", "200*80", "200*90"]
+                      li.itemSize=i 
+                  ul.listColor
+                    li.itemTitle Цвет
+                    for e in ["#603900", "#a0a0a0", "#ae8c64", "#f6ead7"]
+                      li.itemColor
+                        .showColor(style={'background-color': e})
+                p.specification 
+                  span.specification-title Бесплатный замер
+                  br 
+                  | Закажите эту дверь с установкой и мы сделаем бесплатный замер проемов!
 
-              .specification
+              .characteristics
+                .char-btn
+                  button.char-button.but Характеристики 
+                  button.char-button.but Комплектация
+                .char-text
+                  ul.text-list
+                    for i in [{left:"Фабрика:", right:"СИБИРЬ-ПРОФИЛЬ (Двери ПВХ)"},{left:"Материал:", right:"брус хвойных пород, МДФ"},{left:"Отделка:", right:"файн-лайн шпон, полиуретановый лак Renner (Италия)"},{left:"Стекло:", right:"Сатинато белое"},{left:"Толщина (мм):", right:"40"},{left:"Кол-во в упаковке (шт):", right:"30"}] 
+                      li.item-text
+                        .p.left=i.left
+                        .p.right=i.right                                                     
+
+              .service
+                P.shipping Доставка от 650 до 1250 рублей в пределах МКАД. Возим и в Подмосковье!
+                  br
+                  a(href="#").details Подробнее...
+                P.shipping.install Установка межкомнатных дверей с гарантией — от 1800 рублей. 
+                  a(href="#").details Подробнее...
+                                                                  
+	                                                                       
+	                                                               
+                        
 
 

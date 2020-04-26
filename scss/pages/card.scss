@@ -45,14 +45,14 @@
       .description {
         width: 100%;
         .priceDoor {
-          margin-bottom: 38px;
+          margin-bottom: 30px;
           .doorsAmount {
             display: flex;
             justify-content: space-between;
             .amount {
               display: flex;
               justify-content: space-between;
-              width: 77.65%;
+              width: 77.5%;
               margin-bottom: 3px;
               .choose-number {
                 font-size: 15px;
@@ -90,6 +90,7 @@
           }
           .doorsSet {
             display: flex;
+            justify-content: space-between;
             .priceForDoors {
               display: flex;
               justify-content: space-between;
@@ -140,7 +141,151 @@
               align-items: center;
               justify-content: center;
               width: 20%;
+              .sentBasket {
+                margin-bottom: 14px;
+              }
             }
+          }
+        }
+
+        .size {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 40px;
+          .chooseSize {
+            width: 66.5%;
+            .listSize {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 30px;
+              .itemTitle {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 13%;
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 700;
+                text-transform: uppercase;
+              }
+              .itemSize {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 110px;
+                height: 40px;
+                border: 1.0px solid #d8d8d8;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 400;
+                &:hover {
+                  border: 1.0px solid #ec7919;
+                }
+              }
+            }
+            .listColor {
+              display: flex;
+              justify-content: space-between;
+              .itemTitle {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 13%;
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 700;
+                text-transform: uppercase;
+              }
+              .itemColor {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 110px;
+                height: 40px;
+                border: 1.0px solid #d8d8d8;
+                .showColor {
+                  width: 88px;
+                  height: 23px;
+                }
+                &:hover {
+                  border: 1.0px solid #ec7919;
+                }
+              }
+            }
+          }
+          .specification {
+            width: 25.4%;
+            padding: 9px 27px;
+            background-color: #f3f3f3;
+            .specification-title {
+              font-size: 15px;
+              line-height: 25px;
+              font-weight: 700;
+              text-transform: uppercase;
+              color: #ec7919;
+            }
+          }
+        }
+
+        .characteristics {
+          margin-bottom: 33px;
+          .char-btn {
+            margin-bottom: 10px;
+            .char-button {
+              width: 210px;
+              height: 53px;
+              &:not(:last-child) {
+                margin-right: 15px;
+              }
+              &:hover {
+                background-color: #ec7919;
+                color: #ffffff;
+              }
+            }
+          }
+          .char-text {
+            .text-list {
+              .item-text {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 48px;
+                padding: 0 19px 0 11px;
+                &:nth-child(2n) {
+                  background-color: #fafafa;
+                }
+                .left {
+                  font-size: 18px;
+                  line-height: 20px;
+                  font-weight: 700;
+                }
+                .right {
+                  font-size: 18px;
+                  line-height: 20px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }         
+        }
+
+        .service {
+          display: flex;
+          .shipping{
+            width: 39%;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            .details {
+              font-weight: 500;
+              color: #ec7919;
+            }
+          }
+          .install {
+            width: 30%;
+            margin-left: 65px;
           }
         }
       }
