@@ -67,40 +67,76 @@ html(lang="ru")
 
               .size
                 .chooseSize
-                  ul.listSize 
+                  ul.listSize
                     li.itemTitle Размеры
                     for i in ["200*60", "200*70", "200*80", "200*90"]
-                      li.itemSize=i 
+                      li.itemSize=i
                   ul.listColor
                     li.itemTitle Цвет
                     for e in ["#603900", "#a0a0a0", "#ae8c64", "#f6ead7"]
                       li.itemColor
                         .showColor(style={'background-color': e})
-                p.specification 
+                p.specification
                   span.specification-title Бесплатный замер
-                  br 
+                  br
                   | Закажите эту дверь с установкой и мы сделаем бесплатный замер проемов!
 
               .characteristics
                 .char-btn
-                  button.char-button.but Характеристики 
+                  button.char-button.but Характеристики
                   button.char-button.but Комплектация
                 .char-text
                   ul.text-list
-                    for i in [{left:"Фабрика:", right:"СИБИРЬ-ПРОФИЛЬ (Двери ПВХ)"},{left:"Материал:", right:"брус хвойных пород, МДФ"},{left:"Отделка:", right:"файн-лайн шпон, полиуретановый лак Renner (Италия)"},{left:"Стекло:", right:"Сатинато белое"},{left:"Толщина (мм):", right:"40"},{left:"Кол-во в упаковке (шт):", right:"30"}] 
+                    for i in [{left:"Фабрика:", right:"СИБИРЬ-ПРОФИЛЬ (Двери ПВХ)"},{left:"Материал:", right:"брус хвойных пород, МДФ"},{left:"Отделка:", right:"файн-лайн шпон, полиуретановый лак Renner (Италия)"},{left:"Стекло:", right:"Сатинато белое"},{left:"Толщина (мм):", right:"40"},{left:"Кол-во в упаковке (шт):", right:"30"}]
                       li.item-text
-                        .p.left=i.left
-                        .p.right=i.right                                                     
+                        p.left=i.left
+                        p.right=i.right
 
               .service
                 P.shipping Доставка от 650 до 1250 рублей в пределах МКАД. Возим и в Подмосковье!
                   br
                   a(href="#").details Подробнее...
-                P.shipping.install Установка межкомнатных дверей с гарантией — от 1800 рублей. 
+                P.shipping.install Установка межкомнатных дверей с гарантией — от 1800 рублей.
                   a(href="#").details Подробнее...
-                                                                  
-	                                                                       
-	                                                               
-                        
+
+          h3.headling3.hardware-doors Фурнитура для этой двери
+
+          .hardware
+            ul.hardware-phono
+              for i in [{img:"img/img/handle1.png", text:"Ручки раздельные"}, {img:"img/img/handle1.png", text:"Ручки раздельные"}, {img:"img/img/handle1.png", text:"Ручки раздельные"}, {img:"img/img/handle1.png", text:"Ручки раздельные"}, {img:"img/img/handle1.png", text:"Ручки раздельные"}, {img:"img/img/handle1.png", text:"Ручки раздельные"}]
+                li.hardware-handle
+                  a(href="#")
+                    img(src=i.img, alt="img").handle-img
+                    p.handle-name=i.text
+            .video
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZMbtwFQjiq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          h3.headling3.offer Другие предложения из раздела «Евро»
+
+          ul.goods-list
+            for i in ["","","","","","","","","","","","","",""]
+              li.item
+                img(src="img/img/d1.jpeg", alt="img").goods-img
+                p.goods-name Евро-40
+                p.goods-color Белый дуб
+                p.old-price 5 783 руб
+                p.new-price 4 300 руб
+                button.in-basket В корзину
+          //- button.arrow
+
+          h3.headling3.recent Другие предложения из раздела «Евро»
+
+          ul.goods-list
+            for i in ["","","","","","","","","","","","","",""]
+              li.item
+                img(src="img/img/d1.jpeg", alt="img").goods-img
+                p.goods-name Евро-40
+                p.goods-color Белый дуб
+                p.old-price 5 783 руб
+                p.new-price 4 300 руб
+                button.in-basket В корзину
+
+
+
 
 

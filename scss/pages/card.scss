@@ -268,7 +268,7 @@
                 }
               }
             }
-          }         
+          }
         }
 
         .service {
@@ -287,6 +287,97 @@
             width: 30%;
             margin-left: 65px;
           }
+        }
+      }
+    }
+
+    .hardware-doors {
+      margin-bottom: 30px;
+      text-align: start;
+    }
+
+    .hardware {
+      width: 100%;
+      display: flex;
+      margin-bottom: 77px;
+      .hardware-phono {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        .hardware-handle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: calc(100% / 2 - 31px / 2);
+          height: 159px;
+          border: 1.0px solid #dcdcdc;
+          .handle-img {
+            margin-bottom: 25px;
+            padding-left: 24px;
+          }
+          .handle-name {
+            width: 124px;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 500;
+          }
+        }
+      }
+      .video {
+        width: 778px;
+        height: 520px;
+        flex-shrink: 0;
+        margin-left: 57px;
+      }
+    }
+
+    .offer {
+      margin-bottom: 32px;
+    }
+
+    .goods-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 33px;
+      .item {
+        text-align: center;
+        margin-bottom: 57px;
+        &:not(:nth-child(7n)) {
+          margin-right: 51px;
+        }
+        .goods-img {
+          height: 314px;
+          margin-bottom: 19px;
+        }
+        .goods-name {
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 500;
+          margin-bottom: 12px;
+        }
+        .goods-color {
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 300;
+          color: #2b2d2f;
+          margin-bottom: 19px;
+        }
+        .old-price {
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 500;
+          color: #7c7c7c;
+          text-decoration: line-through;
+        }
+        .new-price {
+          font-size: 20px;
+          line-height: 22px;
+          font-weight: 500;
+          color: #e73636;
+          margin-bottom: 18px;
         }
       }
     }
