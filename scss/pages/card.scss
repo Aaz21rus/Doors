@@ -342,11 +342,25 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 33px;
+      .left {
+        width: 10px;
+        height: 10px;
+        border-top: 3px solid #ec7919;
+        border-left: 3px solid #ec7919;
+        transform: rotate(-45deg) translate(25%, 25%);
+      }
+      .right {
+        transform: rotate(135deg) translate(25%, 25%);
+      }
+      .offer-btn {
+        border: none;
+        margin-top: 127px;
+      }
       .item {
         text-align: center;
         margin-bottom: 57px;
-        &:not(:nth-child(7n)) {
-          margin-right: 51px;
+        &:not(:nth-child(8n)) {
+          margin-right: 30px;
         }
         .goods-img {
           height: 314px;
