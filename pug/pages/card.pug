@@ -109,11 +109,16 @@ html(lang="ru")
                     img(src=i.img, alt="img").handle-img
                     p.handle-name=i.text
             .video
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZMbtwFQjiq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="778" height="520" src="https://www.youtube.com/embed/ZMbtwFQjiq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           h3.headling3.offer Другие предложения из раздела «Евро»
 
           ul.goods-list
+<<<<<<< HEAD
+=======
+            button.arrow.offer-btn
+              .left
+>>>>>>> aa207081ad89f68bce3242792c8339c4e303d3ae
             for i in ["","","","","","",""]
               li.item
                 img(src="img/img/d1.jpeg", alt="img").goods-img
@@ -122,11 +127,18 @@ html(lang="ru")
                 p.old-price 5 783 руб
                 p.new-price 4 300 руб
                 button.in-basket В корзину
+            button.arrow.offer-btn
+              .left.right
           //- button.arrow
 
           h3.headling3.recent Другие предложения из раздела «Евро»
 
           ul.goods-list
+<<<<<<< HEAD
+=======
+            button.arrow.offer-btn
+              .left
+>>>>>>> aa207081ad89f68bce3242792c8339c4e303d3ae
             for i in ["","","","","","",""]
               li.item
                 img(src="img/img/d1.jpeg", alt="img").goods-img
@@ -135,6 +147,10 @@ html(lang="ru")
                 p.old-price 5 783 руб
                 p.new-price 4 300 руб
                 button.in-basket В корзину
+            button.arrow.offer-btn
+              .left.right
+
+    include ../modules/footer
 
 
 
