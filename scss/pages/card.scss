@@ -341,10 +341,11 @@
     .goods-list {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 33px;
+      &:not(:last-child) {
+        margin-bottom: 74px;
+      }
       .item {
         text-align: center;
-        margin-bottom: 57px;
         &:not(:nth-child(7n)) {
           margin-right: 51px;
         }
