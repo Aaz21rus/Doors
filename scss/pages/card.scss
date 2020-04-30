@@ -341,15 +341,6 @@
     .goods-list {
       display: flex;
       flex-wrap: wrap;
-<<<<<<< HEAD
-      &:not(:last-child) {
-        margin-bottom: 74px;
-      }
-      .item {
-        text-align: center;
-        &:not(:nth-child(7n)) {
-          margin-right: 51px;
-=======
       margin-bottom: 33px;
       .left {
         width: 10px;
@@ -370,7 +361,6 @@
         margin-bottom: 57px;
         &:not(:nth-child(8n)) {
           margin-right: 30px;
->>>>>>> aa207081ad89f68bce3242792c8339c4e303d3ae
         }
         .goods-img {
           height: 314px;

@@ -40,10 +40,54 @@ html(lang="ru")
               input(type="text", name="number", placeholder="4").body.number
               p.body.sum 9 300 руб.
               .body.edit
+                button.close
               .body.body-instruction
                 p.instruction-text выберите количество дверей
                   |
                   span.star *
                 p.instruction-text Цена уменьшается прапорционально количеству
 
+          .total
+            .sum
+              p.text Итого:  
+              p.sum-num 9 300 руб.
+              p.old-num 12 600 руб.
+            .save
+              p.discount Экономия:  
+              p.discount-num 3 300 руб.
+    
+          form.form 
+            h2.headlings2 Оформить заказ
+            .container-block1
+              .input-block1
+                .input-label
+                  label(for="name").label-name Фамилия, Имя *
+                  input(type="text", name="name", placeholder="Введите Имя").input-name
+                .input-label
+                  label(for="name").label-name телефон *
+                  input(type="text", name="name", placeholder="Введите телефон").input-name 
+                .input-label
+                  label(for="name").label-name Email *
+                  input(type="text", name="name", placeholder="Введите email").input-name
+              textarea(name="comments").textarea-comments
+            .container-block2
+              .payment-method
+                label(for="pay").label-name Способ оплаты
+                select(name="pay").feature
+                  option(value="Оплата наличными при получении").feature-option Оплата наличными при получении
+              .shipment-method
+                label(for="pay").label-name Способ доставки
+                select(name="pay").feature
+                  option(value="Оплата наличными при получении").feature-option Самовывоз (Бесплатно)
+            .container-block3
+              .label-name Адрес
+              input(type="text", placeholder="Город").city
+              input(type="text", placeholder="Улица").street
+              input(type="text", placeholder="Корпус").housing
+              input(type="text", placeholder="Город").city
+              input(type="text", placeholder="Квартира").apt
+            .container-block3
+              .label-name Нужен монтаж
+               select(name="instal").feature
+                  option(value="Да").feature-option Да
     include ../modules/footer

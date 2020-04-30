@@ -29,6 +29,7 @@
       }
 
       .basket-container {
+        margin-bottom: 36px;
         // display: grid;
         // grid-template-rows: 1fr 1fr;
         .basket-head {
@@ -115,12 +116,9 @@
             text-transform: uppercase;
             letter-spacing: 0.025em;
           }
-          // .edit {grid-column: 6/6;}
-          .basket-photo {}
-          .body-text {
+          .edit {
 
           }
-          .edit
           .body-instruction {
             grid-column: 3/6;
             .instruction-text {
@@ -129,6 +127,151 @@
           }
         }
       }
-    }
-  }
+
+      .total {
+        margin-bottom: 65px;
+        text-align: right;
+        .sum {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin-bottom: 19px;
+          .text {
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 700;
+            margin-right: 19px;
+          }
+          .sum-num {
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 500;
+            margin-right: 19px;
+          }
+          .old-num {
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 400;
+            color: #868484;
+            text-decoration: line-through;
+          }
+        }
+        .save {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          .discount {
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ec7919;
+          }
+          .discount-num {
+            font-size: 25.1px;
+            font-weight: 500;
+            color: #ec7919;
+          }
+        } 
+      }
+
+      .form  {
+        margin-bottom: 87px;
+        background-color: #fafafa;
+        padding: 38px 44px 54px 37px;
+        .headlings2 {
+          margin-bottom: 29px;
+          font-size: 35px;
+          line-height: 35px;
+          font-weight: 500;
+        }
+        .container-block1 {
+          display: flex;
+          margin-bottom: 17px;
+          align-content: space-between;
+          .input-block1 {
+            margin-right: 48px;
+            display: flex;
+            flex-shrink: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 558px;
+            height: 154px;
+            .input-label {
+              .label-name{
+                font-size: 15px;
+                line-height: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-right: 18px;
+              }
+              .input-name {
+                height: 40px;
+                background-color: #ffffff;    
+              }
+            }
+          }
+          .textarea-comments {
+            width: 100%;
+          }
+        }
+        .container-block2 {
+          display: flex;
+          .payment-method {
+            margin-right: 48px;
+            width: 558px;
+            flex-shrink: 0;
+            .label-name {
+              font-size: 15px;
+              line-height: 15px;
+              font-weight: 700;
+              text-transform: uppercase;
+              margin-right: 18px;
+            }
+            .feature {
+              width: 100%;
+              padding: 12px 56px 12px 22px;
+              font-size: 16px;
+              line-height: 16px;
+              font-weight: 400;
+              height: 40px;
+              background-color: #ffffff;
+              border: 1px solid #d8d8d8;
+              appearance: none;
+              background-image: url("../img/iconcolor/selectbtn.png");
+              background-repeat: no-repeat;
+              background-position: right 16px center;
+              margin-left: 15px;
+            }
+          }
+          .shipment-method {
+            width: 100%;
+            .label-name {
+              font-size: 15px;
+              line-height: 15px;
+              font-weight: 700;
+              text-transform: uppercase;
+              margin-right: 18px;
+            }
+            .feature {
+              width: 100%;
+              padding: 12px 56px 12px 22px;
+              font-size: 16px;
+              line-height: 16px;
+              font-weight: 400;
+              height: 40px;
+              background-color: #ffffff;
+              border: 1px solid #d8d8d8;
+              appearance: none;
+              background-image: url("../img/iconcolor/selectbtn.png");
+              background-repeat: no-repeat;
+              background-position: right 16px center;
+              margin-left: 15px;
+            }
+          }     
+        }
+      }
+    }  
+  } 
 }
