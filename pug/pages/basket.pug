@@ -22,15 +22,43 @@ html(lang="ru")
 
           .headling2 О нашей компании
 
-          .basket-container
-            .basket-head
-              p.head-text.photo фото
-              p.head-text.name наименование
-              p.head-text.money цена
-              p.head-text.number количество
-              p.head-text.sum сумма
-              p.head-text.edit редактировать
-            .basket-body
+          table.basket-container
+            tr.head
+              th.head-text.photo фото
+              th.head-text.name наименование
+              th.head-text.money цена
+              th.head-text.number количество
+              th.head-text.sum сумма
+              th.head-text.edit редактировать
+            tr.body
+              td(rowspan=2).body-photo
+                img(src="img/img/d1.jpeg", alt="").photo
+              td(rowspan=2).body-name
+                p.name Дверь межкомнатная шпонированная «Париж» Виски (Шпон натуральный) остекление художественное
+                p.descp Цвет: Виски, Тип: Полотно
+              td.body-money.money 9 300 руб.
+              td.body-number
+                input(type="text", name="number", placeholder="4").number
+              td.body-sum.sum 9 300 руб.
+              td.body-edit
+                button.close
+            tr
+              td(colspan=4).body.body-instruction
+                  p.instruction-text выберите количество дверей
+                    |
+                    span.star *
+                  p.instruction-smalltext Цена уменьшается прапорционально количеству
+
+
+          //- .basket-container
+            //- .basket-head
+            //-   p.head-text.photo фото
+            //-   p.head-text.name наименование
+            //-   p.head-text.money цена
+            //-   p.head-text.number количество
+            //-   p.head-text.sum сумма
+            //-   p.head-text.edit редактировать
+            //- .basket-body
               img(src="img/img/d1.jpeg", alt="").photo.body
               p.body.name Дверь межкомнатная шпонированная «Париж» Виски (Шпон натуральный) остекление художественное
                 br
@@ -49,14 +77,14 @@ html(lang="ru")
 
           .total
             .sum
-              p.text Итого:  
+              p.text Итого:
               p.sum-num 9 300 руб.
               p.old-num 12 600 руб.
             .save
-              p.discount Экономия:  
+              p.discount Экономия:
               p.discount-num 3 300 руб.
-    
-          form.form 
+
+          form.form
             h2.headlings2 Оформить заказ
             .container-block1
               .input-block1
@@ -65,7 +93,7 @@ html(lang="ru")
                   input(type="text", name="name", placeholder="Введите Имя").input-name
                 .input-label
                   label(for="name").label-name телефон *
-                  input(type="text", name="name", placeholder="Введите телефон").input-name 
+                  input(type="text", name="name", placeholder="Введите телефон").input-name
                 .input-label
                   label(for="name").label-name Email *
                   input(type="text", name="name", placeholder="Введите email").input-name
