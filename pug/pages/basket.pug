@@ -49,32 +49,6 @@ html(lang="ru")
                     span.star *
                   p.instruction-smalltext Цена уменьшается прапорционально количеству
 
-
-          //- .basket-container
-            //- .basket-head
-            //-   p.head-text.photo фото
-            //-   p.head-text.name наименование
-            //-   p.head-text.money цена
-            //-   p.head-text.number количество
-            //-   p.head-text.sum сумма
-            //-   p.head-text.edit редактировать
-            //- .basket-body
-              img(src="img/img/d1.jpeg", alt="").photo.body
-              p.body.name Дверь межкомнатная шпонированная «Париж» Виски (Шпон натуральный) остекление художественное
-                br
-                |
-                span.desp Цвет: Виски, Тип: Полотно
-              p.body.money 9 300 руб.
-              input(type="text", name="number", placeholder="4").body.number
-              p.body.sum 9 300 руб.
-              .body.edit
-                button.close
-              .body.body-instruction
-                p.instruction-text выберите количество дверей
-                  |
-                  span.star *
-                p.instruction-text Цена уменьшается прапорционально количеству
-
           .total
             .sum
               p.text Итого:
@@ -87,35 +61,48 @@ html(lang="ru")
           form.form
             h2.headlings2 Оформить заказ
             .container-block1
-              .input-block1
-                .input-label
+              .input-block
+                .input-container
                   label(for="name").label-name Фамилия, Имя *
                   input(type="text", name="name", placeholder="Введите Имя").input-name
-                .input-label
+                  //- include ../modules/form-input.pug
+                .input-container
                   label(for="name").label-name телефон *
                   input(type="text", name="name", placeholder="Введите телефон").input-name
-                .input-label
+                .input-container
                   label(for="name").label-name Email *
                   input(type="text", name="name", placeholder="Введите email").input-name
-              textarea(name="comments").textarea-comments
+                .input-container
+                  label(for="pay").label-name Способ оплаты
+                  select(name="pay").feature
+                    option(value="Оплата наличными при получении").feature-option Оплата наличными при получении
+              .text-block
+                .text-container
+                  textarea(name="comments", placeholder="Комментарий к заказу").textarea-comments
+                .select-block
+                  label(for="pay").label-name Способ доставки
+                  select(name="pay").feature
+                    option(value="Оплата наличными при получении").feature-option Самовывоз (Бесплатно)
             .container-block2
-              .payment-method
-                label(for="pay").label-name Способ оплаты
-                select(name="pay").feature
-                  option(value="Оплата наличными при получении").feature-option Оплата наличными при получении
-              .shipment-method
-                label(for="pay").label-name Способ доставки
-                select(name="pay").feature
-                  option(value="Оплата наличными при получении").feature-option Самовывоз (Бесплатно)
-            .container-block3
               .label-name Адрес
-              input(type="text", placeholder="Город").city
-              input(type="text", placeholder="Улица").street
-              input(type="text", placeholder="Корпус").housing
-              input(type="text", placeholder="Город").city
-              input(type="text", placeholder="Квартира").apt
+              input(type="text", placeholder="Город").input-name.long
+              input(type="text", placeholder="Улица").input-name.long
+              input(type="text", placeholder="Корпус").input-name.small
+              input(type="text", placeholder="Город").input-name.small
+              input(type="text", placeholder="Квартира").input-name.small
             .container-block3
               .label-name Нужен монтаж
-               select(name="instal").feature
-                  option(value="Да").feature-option Да
+              select(name="instal").feature
+                option(value="Да").feature-option Да
+            .container-block4
+              .agree
+                label(for="check").checkbox
+                  input(type="checkbox", id="check").agree-v
+                  .new-v
+                p.agree-text Нажимая кнопку «Оформить заказ» вы даете
+                  br
+                  | согласие
+                  |
+                  span.personal на обработку персональных данных
+              button.form-btn.btn-size Оформить заказ
     include ../modules/footer
