@@ -48,11 +48,11 @@
           margin-bottom: 30px;
           .doorsAmount {
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             .amount {
               display: flex;
               justify-content: space-between;
-              width: 77.5%;
+              width: 100%;
               margin-bottom: 3px;
               .choose-number {
                 font-size: 15px;
@@ -78,14 +78,21 @@
               }
             }
             .in-stock {
-              padding-left: 29px;
-              background-image: url("../img/iconcolor/galka_6328.png");
-              background-repeat: no-repeat;
-              background-position: left top;
-              font-size: 18px;
-              line-height: 20px;
-              font-weight: 400;
-              color: #009100;
+              margin-left: 16px; 
+              display: flex;
+              flex-shrink: 0;
+              width: 176px;
+              justify-content: flex-end;
+              .in-stock-text {                   
+                padding-left: 29px;
+                background-image: url("../img/iconcolor/galka_6328.png");
+                background-repeat: no-repeat;
+                background-position: left top;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #009100;
+              }  
             }
           }
           .doorsSet {
@@ -95,7 +102,7 @@
               display: flex;
               justify-content: space-between;
               padding: 16px 16px 14px 33px;
-              width: 71.65%;
+              width: 100%;
               border: 1.0px solid #dcdcdc;
               .oldPrice {
                 font-size: 25px;
@@ -137,12 +144,16 @@
               }
             }
             .buy {
+              width: 176px;
+              margin-left: 16px;
+              flex-shrink: 0;
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 20%;
-              .sentBasket {
-                margin-bottom: 14px;
+              .btnContainer{               
+                .sentBasket:not(:last-child) {
+                  margin-bottom: 14px;
+                }
               }
             }
           }

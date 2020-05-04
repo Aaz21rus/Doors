@@ -27,16 +27,25 @@ html(lang="ru")
             .index-text >
             .index-text.choose Межкомнатные двери
           .sorting
-            for i, n in ["стиль", "цвет", "материал", "тип двери", "размеры", "прочее" ]
-              p.select-feture=i
-                for j in select[n]
-                  select(name=i).feature
-                    option(value=j).feature-option=j
-            button.sort Применить
-            button.sort-cancel Сбросить
-            p.find Найдено
-              span.find-goods 952
-              | товара
+            .sorting-container
+              .select-list
+                for i, n in ["стиль", "цвет", "материал", "тип двери"]
+                  p.select-feture=i
+                    for j in select[n]
+                      select(name=i).feature
+                        option(value=j).feature-option=j
+              .select-list2
+                .select-btn
+                  for i, n in ["размеры", "прочее" ]
+                    p.select-feture=i
+                      for j in select[n]
+                        select(name=i).feature
+                          option(value=j).feature-option=j
+                  button.sort Применить
+                  button.sort-cancel Сбросить
+                p.find Найдено
+                  span.find-goods 952
+                  | товара
           .headling2 Межкомнатные двери от производителя
           .picking
             .price-sort
