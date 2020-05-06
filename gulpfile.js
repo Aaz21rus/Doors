@@ -6,7 +6,7 @@ const autoprefixer = require('gulp-autoprefixer')
 const plumber = require('gulp-plumber')
 const notify = require('gulp-notify')
 // const minifyCSS = require('gulp-csso')
-// const concat = require('gulp-concat')
+const concat = require('gulp-concat')
 
 function html() {
   return src('pug/pages/*.pug')
@@ -40,11 +40,11 @@ function css() {
     .pipe(dest('build/css'))
 }
 
-// function js() {
-//   return src('client/javascript/*.js', { sourcemaps: true })
-//     .pipe(concat('app.min.js'))
-//     .pipe(dest('build/js', { sourcemaps: true }))
-// }
+function js() {
+  return src('js/*.js')
+    .pipe(concat('app.min.js'))
+    .pipe(dest('build/js'))
+}
 
 function copyImg() {
   return src('img/**/*.{jpg,jpeg,gif,png,svg}').pipe(dest('build/img'))
@@ -59,6 +59,7 @@ task('watcher', _=> {
   watch('scss/**/*.scss', series(css))
   watch('img/**/*.{jpg,jpeg,gif,png,svg}', series(copyImg))
   watch('fonts/*.*', series(copyFonts))
+  watch('js/**/*.js', series(js))
 })
 
 task('serve', _ => {
@@ -75,6 +76,6 @@ task('serve', _ => {
 })
 
 exports.default = parallel(
-  series(html, css, copyImg, copyFonts, 'watcher'),
+  series(html, css, copyImg, copyFonts, js, 'watcher'),
   'serve'
 )
