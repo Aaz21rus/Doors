@@ -3,3 +3,4 @@ build/
 report*
 yarn.lock
 package-lock.json
+.DS_Store
