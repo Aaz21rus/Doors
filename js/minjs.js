@@ -1,1 +1,4 @@
-console.log(12312);
+const btnLevel1 = querySelectorAll('.doors-name');
+
+console.log(btnLevel1);
+
