@@ -34,6 +34,7 @@
       }
     }
   }
+
   .sort-color {
     padding: 23px 0 28px 20px;
     display: none;
@@ -61,5 +62,11 @@
         text-decoration: underline;
         color: #d66d15;
       }
+  }
+
+  .doors-sort > .active {
+    .sort-color {
+      display: block;
+    }
   }
 }
