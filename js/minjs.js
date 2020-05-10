@@ -20,17 +20,28 @@ btnLevel2.forEach(openAsideMenu.bind(this, '.door-mat-list'))
 var btnParameters = document.querySelectorAll('.doors-name')
 // btnParameters.forEach(openAsideMenu.bind(this, '.doors-sort'))
 
-var btnOrderPhone = document.querySelector('.btn')
-btnOrderPhone.addEventListener('click', function(){
-  document.querySelector('.dark-container').classList.add('show')
-})
-
 var darkContainer = document.querySelector('.dark-container')
-darkContainer.addEventListener('click', function(e){
-  console.log(e.currentTarget);
+var btnOrderPhone = document.querySelector('.btn')
+var phoneBtn = document.querySelector('phone-btn')
+function noScroll() {
+  window.scrollTo(0, 0);
+}
 
-  // if (e.currentTarget === ) {
-  //   darkContainer.classList.remove('show')
-  // }
+btnOrderPhone.addEventListener('click', function(){
+  darkContainer.classList.add('show')
+  // window.addEventListener('scroll', noScroll)
 })
+// window.addEventListener('mousewheel', function(e) {
+//   e.preventDefault();
+// })
+
+darkContainer.addEventListener('click', function(e){
+  if (e.target === e.currentTarget) {
+    darkContainer.classList.remove('show')
+  }
+})
+
+// phoneBtn.addEventListener('click', function(){
+//   darkContainer.classList.remove('show')
+// })
 
