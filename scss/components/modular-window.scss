@@ -3,9 +3,9 @@
   height: 100%;
   position: absolute;
   background-color: rgba(128,128,128,0.6);
-  display: flex;
+  display: none;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   z-index: 1;
   overflow: hidden;
   .close-container {
@@ -38,4 +38,7 @@
     background-color: #ec7919;
     color: white;
   }
+}
+.show {
+  display: flex;
 }
