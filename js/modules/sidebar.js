@@ -16,5 +16,5 @@ btnLevel1.forEach(openAsideMenu.bind(this, '.doors'))
 var btnLevel2 = document.querySelectorAll('.doors .door-material')
 btnLevel2.forEach(openAsideMenu.bind(this, '.door-mat-list'))
 
-// var btnParameters = document.querySelectorAll('.doors-sort .doors-name')
-// btnParameters.forEach(openAsideMenu.bind(this, '.doors-sort'))
+var btnParameters = document.querySelectorAll('.doors-sort .doors-name')
+btnParameters.forEach(openAsideMenu.bind(this, '.doors-sort'))
