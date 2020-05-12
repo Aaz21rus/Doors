@@ -45,11 +45,11 @@ html(lang="ru")
             p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
 
           .headling3.list Что-то еще списком (можно применить на странице контакты)
-            .char-text
-                  ul.text-list
-                    for i in [{left:"ИНН::", right:"12512521563251"},{left:"КПП:", right:"56451213216541"},{left:"Юридический адрес:", right:" Москва, ул. Куйбышевская, д 12, оф. 407"},{left:"ИНН:", right:"12512521563251"},{left:"КПП:", right:"56451213216541"},{left:"Юридический адрес:", right:"Москва, ул. Куйбышевская, д 12, оф. 407"}]
-                      li.item-text
-                        p.left=i.left
-                        p.right=i.right
+            .contact-text
+              ul.text-list
+                for i in [{left:"ИНН::", right:"12512521563251"},{left:"КПП:", right:"56451213216541"},{left:"Юридический адрес:", right:" Москва, ул. Куйбышевская, д 12, оф. 407"},{left:"ИНН:", right:"12512521563251"},{left:"КПП:", right:"56451213216541"},{left:"Юридический адрес:", right:"Москва, ул. Куйбышевская, д 12, оф. 407"}]
+                  li.item-text
+                    p.left=i.left
+                    p.right=i.right
 
     include ../modules/footer

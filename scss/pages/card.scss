@@ -48,9 +48,8 @@
           width: 100%;
           .priceDoor {
             margin-bottom: 30px;
-            .doorsAmount {
+            .doors-amount {
               display: flex;
-              // justify-content: space-between;
               .amount {
                 display: flex;
                 justify-content: space-between;
@@ -97,7 +96,7 @@
                 }
               }
             }
-            .doorsSet {
+            .doors-set {
               display: flex;
               justify-content: space-between;
               .priceForDoors {
@@ -131,14 +130,13 @@
                   font-weight: 400;
                   color: #27282d;
                 }
-                .setDetails {
+                .set-details {
                   width: 40%;
                   padding: 21px 16px 18px 24px;
                   font-size: 16px;
                   font-weight: 400;
-                  // opacity: 0.4;
                   background-color: #f3f3f3;
-                  .setTitle {
+                  .set-title {
                     line-height: 25px;
                     font-weight: 700;
                     text-transform: uppercase;
@@ -152,8 +150,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .btnContainer{
-                  .sentBasket:not(:last-child) {
+                .btn-container{
+                  .sent-basket:not(:last-child) {
                     margin-bottom: 14px;
                   }
                 }
@@ -165,13 +163,13 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 40px;
-            .chooseSize {
+            .choose-size {
               width: 66.5%;
-              .listSize {
+              .list-size {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 30px;
-                .itemTitle {
+                .item-title {
                   display: flex;
                   align-items: center;
                   justify-content: flex-start;
@@ -181,7 +179,7 @@
                   font-weight: 700;
                   text-transform: uppercase;
                 }
-                .itemSize {
+                .item-size {
                   cursor: pointer;
                   display: flex;
                   align-items: center;
@@ -197,10 +195,10 @@
                   }
                 }
               }
-              .listColor {
+              .list-color {
                 display: flex;
                 justify-content: space-between;
-                .itemTitle {
+                .item-title {
                   display: flex;
                   align-items: center;
                   justify-content: flex-start;
@@ -210,7 +208,7 @@
                   font-weight: 700;
                   text-transform: uppercase;
                 }
-                .itemColor {
+                .item-color {
                   cursor: pointer;
                   display: flex;
                   align-items: center;
@@ -218,7 +216,7 @@
                   width: 110px;
                   height: 40px;
                   border: 1.0px solid #d8d8d8;
-                  .showColor {
+                  .show-color {
                     width: 88px;
                     height: 23px;
                   }
