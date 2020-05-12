@@ -8,6 +8,26 @@
   color: #ffffff;
 }
 
+.sale-btn {
+  width: 259px;
+  height: 55px;
+  background-color: #ec7919;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.sort {
+  width: 131px;
+  height: 44px;
+  background-color: #ec7919;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 .catalog-btn {
   width: 274px;
   height: 58px;
@@ -87,16 +107,6 @@
     transform: rotate(-45deg) translateX(-25%);
   }
 
-.sale-btn {
-  width: 259px;
-  height: 55px;
-  background-color: #ec7919;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #ffffff;
-}
-
 .slider-dot {
   width: 11px;
   height: 11px;
@@ -105,16 +115,6 @@
   &:hover {
     background-color: #ec7919;
   }
-}
-
-.sort {
-  width: 131px;
-  height: 44px;
-  background-color: #ec7919;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 500;
-  color: #ffffff;
 }
 
 .sort-cancel {
@@ -178,7 +178,7 @@
   }
 }
 
-.num {
+.num-btn {
   width: 43px;
   height: 45px;
   border: 1.0px solid #dcdcdc;
