@@ -1,5 +1,5 @@
 var darkContainer = document.querySelector('.dark-container')
-var btnOrderPhone = document.querySelector('.head .btn')
+var btnOrderPhone = document.querySelector('.head .btn-phone')
 
 btnOrderPhone.addEventListener('click', function() {
   darkContainer.classList.add('show')

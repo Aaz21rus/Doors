@@ -34,7 +34,7 @@ html(lang="ru")
             img(src="img/img/d2.jpeg", alt="img").card-img
             .description
               .priceDoor
-                .doorsAmount
+                .doors-amount
                   .amount
                     .amount-text
                       .choose-number Выберите количество дверей
@@ -44,10 +44,10 @@ html(lang="ru")
                     ul.list-number
                       for i in ["1", "2", "3", "4", "5"]
                         li.number-btn
-                          button.num=i
+                          button.num-btn=i
                   .in-stock
                     .in-stock-text В наличии
-                .doorsSet
+                .doors-set
                   .priceForDoors
                     .door-leaf
                       .oldPrice 6 525 руб.
@@ -57,26 +57,26 @@ html(lang="ru")
                       .oldPrice 9 525 руб.
                       .newPrice 7 252 руб.
                       .priceMeasure Цена за комплект
-                    .setDetails
-                      span.setTitle Цена за комлект
+                    .set-details
+                      span.set-title Цена за комлект
                       br
                       | Комплект состоит из коробки, полотна и наличников с двух сторон.
                   .buy
-                    .btnContainer
-                      button.sentBasket В корзину
-                      button.sentBasket Купить в 1 клик
+                    .btn-container
+                      button.sent-basket В корзину
+                      button.sent-basket Купить в 1 клик
 
               .size
-                .chooseSize
-                  ul.listSize
-                    li.itemTitle Размеры
+                .choose-size
+                  ul.list-size
+                    li.item-title Размеры
                     for i in ["200*60", "200*70", "200*80", "200*90"]
-                      li.itemSize=i
-                  ul.listColor
-                    li.itemTitle Цвет
+                      li.item-size=i
+                  ul.list-color
+                    li.item-title Цвет
                     for e in ["#603900", "#a0a0a0", "#ae8c64", "#f6ead7"]
-                      li.itemColor
-                        .showColor(style={'background-color': e})
+                      li.item-color
+                        .show-color(style={'background-color': e})
                 p.specification
                   span.specification-title Бесплатный замер
                   br
@@ -124,7 +124,7 @@ html(lang="ru")
                 p.goods-color Белый дуб
                 p.old-price 5 783 руб
                 p.new-price 4 300 руб
-                button.in-basket В корзину
+                button.in-basket-btn В корзину
             button.arrow.offer-btn
               .left.right
 
@@ -140,7 +140,7 @@ html(lang="ru")
                 p.goods-color Белый дуб
                 p.old-price 5 783 руб
                 p.new-price 4 300 руб
-                button.in-basket В корзину
+                button.in-basket-btn В корзину
             button.arrow.offer-btn
               .left.right
 
