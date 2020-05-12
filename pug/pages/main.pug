@@ -31,16 +31,16 @@ html(lang="ru")
     main.main
       .container
 
-        include ../modules/filter
+        include ../modules/sidebar
 
         section.main-section
           .slider
-            img.new-year(src="img/img/dde71a2a (1).png", alt="branch")
+            img.new-year-img(src="img/img/dde71a2a (1).png", alt="branch")
             .slider-news
               h1.headling1 Новогодние скидки!
               p.text С 24 декабря по 20 января
-              button.sale Перейти к распродаже
-          ul.slider-btn
+              button.sale-btn Перейти к распродаже
+          ul.slider-btn-list
             for i in ['','','','','','']
               li.item
                 button.slider-dot
@@ -50,14 +50,14 @@ html(lang="ru")
                 h2.headling2=i
                 ul.models
                   each j in models[num]
-                    li.model-item.itemThree
+                    li.model-item
                       img(src=j.src, alt="img").m-img
                       p.m-title=j.text
                       p.m-count=j.count
                 .m-link
                   each b in link[num]
                     a(href="#").doorLink=b
-                    
+
     include ../modules/footer
 
 

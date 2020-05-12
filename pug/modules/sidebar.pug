@@ -14,16 +14,16 @@
 - var materials = [interiorDoors1, entranceDoors2, warehouseDoors3, slidingDoors4, archesPortals5, bathSauna6, fireFighting7, Hardware8]
 - var view = [sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1, sortMat1]
 
-aside.filter
+aside.sidebar
   ul.doors
     each val, num in doors
       li
-        button.doors-name=val
+        button.doors-name-btn=val
           .point
         ul.door-mat-list
           each i, count in materials[num]
             li
-              button.door-material=i
+              button.door-material-btn=i
                 .point-in
               ul.veneer
                 each k in view[count]
@@ -32,10 +32,10 @@ aside.filter
 
   h3.headling3 Двери по парамертам
 
-  ul.doors-sort
+  ul.doors-parameters
     each val, num in index
       li
-        button.doors-name=val
+        button.doors-name-btn=val
           .point
 
         ul.sort-color
@@ -44,5 +44,3 @@ aside.filter
               a(href=e.link).color-name
                 div.circle(style={'background-color': e.color})
                 p.color-title=e.name
-
-script(src="js/app.min.js")

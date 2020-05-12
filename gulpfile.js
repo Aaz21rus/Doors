@@ -1,12 +1,20 @@
 const { src, dest, parallel, watch, task, series } = require('gulp')
 const pug = require('gulp-pug')
 const scss = require('gulp-sass')
+const gulplog = require('gulplog')
+const notifier = require('node-notifier')
 const bs = require('browser-sync')
 const autoprefixer = require('gulp-autoprefixer')
 const plumber = require('gulp-plumber')
 const notify = require('gulp-notify')
-// const minifyCSS = require('gulp-csso')
-const concat = require('gulp-concat')
+const webpack = require('webpack')
+const webpackConfig = require('./webpack.config')
+
+console.log(webpackConfig)
+
+//
+// HTML
+//
 
 function html() {
   return src('pug/pages/*.pug')
@@ -24,6 +32,12 @@ function html() {
     .pipe(dest('build'))
 }
 
+
+
+//
+// CSS
+//
+
 function css() {
   return src('scss/*.scss')
     .pipe(plumber({
@@ -40,11 +54,39 @@ function css() {
     .pipe(dest('build/css'))
 }
 
-function js() {
-  return src('js/*.js')
-    .pipe(concat('app.min.js'))
-    .pipe(dest('build/js'))
-}
+
+
+//
+// JS
+//
+
+task('webpack', function(callback) {
+  webpack(webpackConfig, function(err, stats) {
+    if (!err) { // no hard error
+      // try to get a soft error from stats
+      err = stats.toJson().errors[0];
+    }
+
+    if (err) {
+      notifier.notify({
+        title: 'Webpack',
+        message: err
+      })
+
+      gulplog.error(err)
+    } else {
+      gulplog.info(stats.toString({ colors: true }))
+    }
+
+    callback()
+  })
+})
+
+
+
+//
+// Copy images, fonts
+//
 
 function copyImg() {
   return src('img/**/*.{jpg,jpeg,gif,png,svg}').pipe(dest('build/img'))
@@ -54,13 +96,25 @@ function copyFonts() {
   return src('fonts/*.*').pipe(dest('build/fonts'))
 }
 
+
+
+//
+// Gulp Watcher
+//
+
 task('watcher', _=> {
   watch('pug/**/*.pug', series(html))
   watch('scss/**/*.scss', series(css))
   watch('img/**/*.{jpg,jpeg,gif,png,svg}', series(copyImg))
   watch('fonts/*.*', series(copyFonts))
-  watch('js/**/*.js', series(js))
+  // watch('js/**/*.js', series(js))
 })
+
+
+
+//
+// BrowserSync
+//
 
 task('serve', _ => {
   bs({
@@ -75,7 +129,13 @@ task('serve', _ => {
   bs.watch('build/**/*.*').on('change', bs.reload)
 })
 
+
+
+//
+// TASKS
+//
+
 exports.default = parallel(
-  series(html, css, copyImg, copyFonts, js, 'watcher'),
+  series(html, css, 'webpack', copyImg, copyFonts, 'watcher'),
   'serve'
 )

@@ -18,15 +18,19 @@
         height: 89px;
       }
 
-      .tel {
-        padding-left: 29px;
-        background-image: url("../img/iconcolor/телефон.jpg");
-        background-repeat: no-repeat;
-        background-position: left center;
-        margin-right: 16px;
-        font-size: 26px;
-        line-height: 24px;
-        font-weight: 500;
+      .contact {
+        display: flex;
+        align-items: center;
+        .tel {
+          padding-left: 29px;
+          background-image: url("../img/iconcolor/телефон.jpg");
+          background-repeat: no-repeat;
+          background-position: left center;
+          margin-right: 16px;
+          font-size: 26px;
+          line-height: 24px;
+          font-weight: 500;
+        }
       }
 
       .basket {
@@ -75,7 +79,7 @@
 
     .menu {
       display: flex;
-      .menulist {
+      .menu-list {
         display: flex;
         width: 973px;
         justify-content: space-between;

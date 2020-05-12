@@ -1,50 +1,50 @@
-.btn {
-    width: 189px;
-    height: 44px;
-    background-color: #ec7919;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    color: #ffffff;
+.btn-phone {
+  width: 189px;
+  height: 44px;
+  background-color: #ec7919;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
-.catalog {
-    width: 274px;
-    height: 58px;
-    background-color: #38393e;
+.catalog-btn {
+  width: 274px;
+  height: 58px;
+  background-color: #38393e;
+  display: flex;
+  justify-content: center;
+  margin-right: 44px;
+  .burger {
     display: flex;
-    justify-content: center;
-    margin-right: 44px;
-    .burger {
-        display: flex;
-        flex-direction: column;
-        margin-right: 19px;
-        .line {
-            width: 27px;
-            height: 2px;
-            background-color: #ffffff;
-            margin-bottom: 5px;
-        }
-        .line:last-child {
-            margin-bottom: 0;
-        }
+    flex-direction: column;
+    margin-right: 19px;
+    .line {
+      width: 27px;
+      height: 2px;
+      background-color: #ffffff;
+      margin-bottom: 5px;
     }
-    .catlogtext {
-        font-size: 20px;
-        line-height: 16px;
-        font-weight: 400;
-        color: #ffffff;
+    .line:last-child {
+      margin-bottom: 0;
     }
-}
-
-.itembtn {
+  }
+  .catalog-text {
     font-size: 20px;
-    line-height: 1.2;
-    font-weight: 300;
+    line-height: 16px;
+    font-weight: 400;
     color: #ffffff;
+  }
 }
 
-.doors-name {
+.item-btn {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.doors-name-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +65,7 @@
     transform: rotate(45deg) translateX(-25%);
   }
 
-.door-material {
+.door-material-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,7 +87,7 @@
     transform: rotate(-45deg) translateX(-25%);
   }
 
-.sale {
+.sale-btn {
   width: 259px;
   height: 55px;
   background-color: #ec7919;
