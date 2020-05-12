@@ -1,36 +1,35 @@
-.filter {
+.sidebar {
+  width: 274px;
   margin-right: 47px;
   .doors {
     margin-bottom: 48px;
-  }
-  .door-mat-list {
-    padding: 23px 18px 3px 30px;
-    display: none;
-  }
-  .doors > .active {
     .door-mat-list {
-      display: block;
+      padding: 23px 18px 3px 30px;
+      display: none;
     }
-  }
-
-  .door-mat-list > .active {
+    .doors > .active {
+      .door-mat-list {
+        display: block;
+      }
+    }
+    .door-mat-list > .active {
+      .veneer {
+        display: block;
+      }
+    }
     .veneer {
-      display: block;
-    }
-  }
-
-  .veneer {
-    margin-bottom: 27px;
-    padding-left: 55px;
-    display: none;
-    .veneer-item:not(:last-child) {
-      margin-bottom: 23px;
-    }
-    .veneer-name {
-      font-size: 16px;
-      color: #d96e14;
-      &:hover {
-        text-decoration: underline;
+      margin-bottom: 27px;
+      padding-left: 55px;
+      display: none;
+      .veneer-item:not(:last-child) {
+        margin-bottom: 23px;
+      }
+      .veneer-name {
+        font-size: 16px;
+        color: #d96e14;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
