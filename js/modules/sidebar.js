@@ -7,6 +7,7 @@ var openAsideMenu = function(targetLi, item) {
           li.classList.remove('active')
         }
       )
+    console.log(e.currentTarget.parentElement.querySelectorAll('.active'));
   })
 }
 
