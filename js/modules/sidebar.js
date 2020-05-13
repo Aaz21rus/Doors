@@ -1,8 +1,8 @@
-const openAsideMenu = function(targetLi, item) {
-  item.addEventListener('click', function(e) {
+const openAsideMenu = (targetLi, item) => {
+  item.addEventListener('click', e => {
     e.currentTarget.parentElement.classList.toggle('active')
     document.querySelectorAll(targetLi + '> li')
-      .forEach(function(li) {
+      .forEach( li => {
           if (li === e.currentTarget.parentElement) return
           li.classList.remove('active')
         }
