@@ -41,21 +41,21 @@ html(lang="ru")
                       for j in select[n]
                         select(name=i).feature
                           option(value=j).feature-option=j
-                  button.sort Применить
-                  button.sort-cancel Сбросить
+                  button.sort-btn Применить
+                  button.sort-cancel-btn Сбросить
                 p.find Найдено
                   span.find-goods 952
                   | товара
           .headling2 Межкомнатные двери от производителя
           .view
             .price-sort
-              button.price Дороже
-              button.price Дешевле
+              button.price-btn Дороже
+              button.price-btn Дешевле
             .show
-              button.showAll Показать все
+              button.showAll-btn Показать все
               p.page-number выводить по
-                select(name="number").page
-                  option(value="40").number 40
+              select(name="number").page
+                option(value="40").number 40
           ul.goods-list
             for i in ["","","","","","","","","","","","","","","","","","","","","","","","","","","","",]
               li.item
@@ -64,18 +64,18 @@ html(lang="ru")
                 p.goods-color Белый дуб
                 p.old-price 5 783 руб
                 p.new-price 4 300 руб
-                button.in-basket В корзину
-          button.more-goods Показать еще (всего 952 товаров)
+                button.in-basket-btn В корзину
+          button.more-goods-btn Показать еще (всего 952 товаров)
           .pages-list
-            button.arrow
+            button.arrow-btn
               .left
             ul.button-number
               for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
                 li.btn-number
-                  button.count=i
+                  button.count-btn=i
             p.dots ...
-            button.count.last 25
-            button.arrow
+            button.count-btn.last 25
+            button.arrow-btn
               .right
 
     include ../modules/footer
